@@ -1,0 +1,525 @@
+<!-- GRID System -->
+<h2 class="weight-800 f-typoslab grid-sys-pos">GRID System</h2>
+<h4 class="mbottom-1">
+	Grid system akan memudahkan anda dalam membuat kolom-kolom responsive pada proyek anda. Anda dapat mengatur kolom-kolom nya sesuai dengan kebutuhan.
+</h4>
+<p>
+	Pada Galss, grid system menggunakan 6 kolom yang sangat mudah untuk di implementasikan kedalam proyek-proyek anda. Dasar dari Grid System pada Galss adalah pada 6 kolom utamanya. Grid systems digunakan untuk membuat layout halaman dengan serangkaian baris dan kolom pada container konten anda.
+</p>
+<ul>
+    <li>Dalam menata layout menggunakan kolom-kolom, class kolom harus berada didalam <code>container</code>.</li>
+    <li>Menggunakan <code>.gp-r</code> class untuk membuat horisontal groups kolom.</li>
+    <li>Konten anda harus berada didalam kolom-kolom</li>
+    <li>Grid system kolom mendukung nesting columns, dengan menggunakan <code>.gp-r</code> untuk membuat baris horisontal, kemudian diikuti dengan class kolom, dan didalam class kolomnya Anda dapat membuat anak kolomnya.</li>
+</ul>
+<p class="grid-opt-pos">
+    Berikut adalah beberapa Grid Options device pada Galss.
+</p>
+<table class="gp-table table-border">
+    <thead>
+        <th></th>
+        <th>Extra Small devices <br/><small>(Phone / Mobile &gt;360px &lt;768px)</small></th>
+        <th>Small devices <br/><small>(Tablets =>768px)</small></th>
+        <th>Medium / Default <br/><small>devices (Desktop =>991px)</small></th>
+        <th>Large devices <br/><small>(Desktop =>1200px)</small></th>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="nowrap">Container width</th>
+            <td>Auto</td>
+            <td>750px</td>
+            <td>960px</td>
+            <td>1164px</td>
+        <tr>
+            <th class="nowrap">Columns</th>
+            <td colspan="4">12</td>
+        </tr>
+        <tr>
+            <th colspan="5">Class Prefix</th>
+        </tr>
+        <tr>
+            <th class="nowrap"><small>default</th>
+            <td><code>.gp-xsmall-c*</code></td>
+            <td><code>.gp-small-c*</code></td>
+            <td colspan="2"><code>.gp-c*</code></td>
+        </tr>
+        <tr>
+            <th class="nowrap"><small>centered column</small></th>
+            <td colspan="4"><code>.gp-c*-mc</code></td>
+        </tr>
+        <tr>
+            <th class="nowrap"><small>exploded column</small></th>
+            <td colspan="2">No</td>
+            <td colspan="2"><code>.gp-ce-*</code></td>
+        </tr>
+        <tr>
+            <th class="nowrap"><small>exploded & mixins column</small></th>
+            <td colspan="2">No</td>
+            <td colspan="2"><code>.gp-ce-* .mix-*</code></td>
+        </tr>
+        <tr>
+            <th class="nowrap"><small>responsive column</small></th>
+            <td><code>.gp-xsmall-c*</code></td>
+            <td><code>.gp-small-c*</code></td>
+            <td colspan="2"><code>.gp-c*</code></td>
+        </tr>
+        <tr>
+            <th class="nowrap">Padding</th>
+            <td colspan="4">10</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Berikut adalah beberapa contoh dalam penggunaan Grid Systems pada Galss
+</p>
+
+<h3 class="weight-800 f-typoslab mbottom-1 default-col-pos">Default column</h3>
+<p>
+	Default column (medium format screen) untuk format screen medium ke atas (<code>@media (min-width: $screen-medium) > 990px</code>). Menggunakan class <code>.gp-c*</code> untuk membuat kolom, tempatkan class grid column didalam class <code>.row</code> untuk wadah baris horisontal.
+</p>
+<h4>Example:</h4>
+<div class="gp-r grid-demo">
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+	<div class="gp-c5 border-default p-1 grey">gp-c5</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c2 border-default p-1 grey">gp-c2</div>
+	<div class="gp-c4 border-default p-1 grey">gp-c4</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c3 border-default p-1 grey">gp-c3</div>
+	<div class="gp-c3 border-default p-1 grey">gp-c3</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c4 border-default p-1 grey">gp-c4</div>
+	<div class="gp-c2 border-default p-1 grey">gp-c2</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c5 border-default p-1 grey">gp-c5</div>
+	<div class="gp-c1 border-default p-1 grey">gp-c1</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c6 border-default p-1 grey">gp-c6</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+	<pre>
+		<code class="html">
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c5"</span><span class="nt">&gt;</span><span>.gp-c5</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c2"</span><span class="nt">&gt;</span><span>.gp-c2</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c4"</span><span class="nt">&gt;</span><span>.gp-c4</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c3"</span><span class="nt">&gt;</span><span>.gp-c3</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c3"</span><span class="nt">&gt;</span><span>.gp-c3</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c4"</span><span class="nt">&gt;</span><span>.gp-c4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c2"</span><span class="nt">&gt;</span><span>.gp-c2</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c5"</span><span class="nt">&gt;</span><span>.gp-c5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1"</span><span class="nt">&gt;</span><span>.gp-c1</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c6"</span><span class="nt">&gt;</span><span>.gp-c6</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		</code>
+	</pre>
+</div>
+<!-- End of HTML used -->
+<div class="gp-r">
+	<div class="horizontal-line-1"></div>
+</div>
+
+<!-- Centered column system -->
+<h3 class="weight-800 f-typoslab mbottom-1 centered-col-pos">Centered column</h3>
+<p>
+	Centered column tersedia untuk semua format screen (<kbd>xsmall/mobile, small, medium, and large format</kbd>). Penggunaan sangat mudah, hanya menggunakan class prefix default column <code>gp-c*</code> diikuti dengan dengan <code>-mc</code>. Contoh penulisan class untuk kolom 3 center adalah <code>gp-c3-mc</code>. 
+</p>
+<h4>Example:</h4>
+<div class="gp-r grid-demo">
+	<div class="gp-c1-mc border-default p-1 grey">gp-c1-mc</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c2-mc border-default p-1 grey">gp-c2-mc</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c3-mc border-default p-1 grey">gp-c3-mc</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c4-mc border-default p-1 grey">gp-c4-mc</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-c5-mc border-default p-1 grey">gp-c5-mc</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+	<pre>
+		<code class="html">
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c1-mc"</span><span class="nt">&gt;</span><span>.gp-c1-mc</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c2-mc"</span><span class="nt">&gt;</span><span>.gp-c2-mc</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c3-mc"</span><span class="nt">&gt;</span><span>.gp-c3-mc</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c4-mc"</span><span class="nt">&gt;</span><span>.gp-c4-mc</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-c5-mc"</span><span class="nt">&gt;</span><span>.gp-c5-mc</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		</code>
+	</pre>
+</div>
+<!-- End of HTML Used -->
+<div class="gp-r grid-demo">
+	<div class="horizontal-line-1"></div>
+</div>
+
+<!-- Exploded columns system -->
+<h3 class="weight-800 f-typoslab mbottom-1 exploded-col-pos">Exploded columns</h3>
+<p>
+	Exploded columns baik digunakan untuk format screen medium ke atas (<code>@media (min-width: $screen-medium) > 990px</code>). Exploded Columns class digunakan untuk memecah kolom sesuai dengan keinginan Anda, dan 1 kolom sementara dapat dipecah maksimal menjadi 12 kolom. Penggunaan class nya <code>gp-ce-*</code>, contoh: misalnya Anda ingin membuat 4 buah kolom dalam 1 baris container, maka cukup dengan menggunakan class <code>gp-ce-4</code> pada baris container Anda.
+</p>
+<h4>Example:</h4>
+<div class="gp-r grid-demo">
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+    <div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+	<div class="gp-ce-12 border-default p-1 grey">gp-ce-12</div>
+</div>
+<div class="gp-r grid-demo">
+    <div class="gp-ce-6 border-default p-1 grey">gp-ce-6</div>
+	<div class="gp-ce-6 border-default p-1 grey">gp-ce-6</div>
+	<div class="gp-ce-6 border-default p-1 grey">gp-ce-6</div>
+	<div class="gp-ce-6 border-default p-1 grey">gp-ce-6</div>
+	<div class="gp-ce-6 border-default p-1 grey">gp-ce-6</div>
+	<div class="gp-ce-6 border-default p-1 grey">gp-ce-6</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-3 border-default p-1 grey">gp-ce-3</div>
+	<div class="gp-ce-3 border-default p-1 grey">gp-ce-3</div>
+	<div class="gp-ce-3 border-default p-1 grey">gp-ce-3</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-2 border-default p-1 grey">gp-ce-2</div>
+	<div class="gp-ce-2 border-default p-1 grey">gp-ce-2</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+	<pre>
+		<code class="html">
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-12"</span><span class="nt">&gt;</span><span>.gp-ce-12</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-6"</span><span class="nt">&gt;</span><span>.gp-ce-6</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-6"</span><span class="nt">&gt;</span><span>.gp-ce-6</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-6"</span><span class="nt">&gt;</span><span>.gp-ce-6</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-6"</span><span class="nt">&gt;</span><span>.gp-ce-6</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-6"</span><span class="nt">&gt;</span><span>.gp-ce-6</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-6"</span><span class="nt">&gt;</span><span>.gp-ce-6</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-3"</span><span class="nt">&gt;</span><span>.gp-ce-3</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-3"</span><span class="nt">&gt;</span><span>.gp-ce-3</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-3"</span><span class="nt">&gt;</span><span>.gp-ce-3</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-2"</span><span class="nt">&gt;</span><span>.gp-ce-2</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-2"</span><span class="nt">&gt;</span><span>.gp-ce-2</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		</code>
+	</pre>
+</div>
+<!-- End of HTML Used -->
+<div class="gp-r">
+	<div class="horizontal-line-1"></div>
+</div>
+
+<!-- Exploded & Mixins columns system -->
+<h3 class="weight-800 f-typoslab mbottom-1 exploded-mix-col-pos">Exploded & Mixins columns</h3>
+<p>
+	Exploded & Mixins columns baik digunakan untuk format screen medium ke atas (<code>@media (min-width: $screen-medium) > 990px</code>). Anda dapat mixins kolom lebih dari 1 - 11 kolom untuk dijadikan 1 kolom. Mixins column hanya mendukung untuk grid system type exploded columns, penggunaan dengan memanggil class <code>mix-*</code>.
+</p>
+<h4>Example:</h4>
+<div class="gp-r grid-demo">
+    <div class="gp-ce-9 border-default p-1 grey">gp-ce-9</div>
+    <div class="gp-ce-9 mix-6 border-default p-1 grey">gp-ce-9 mix-6</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+	<div class="gp-ce-4 mix-3 border-default p-1 grey">gp-ce-4 mix-3</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+	<div class="gp-ce-4 border-default p-1 grey">gp-ce-4</div>
+	<div class="gp-ce-4 mix-2 border-default p-1 grey">gp-ce-4 mix-2</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 mix-2 border-default p-1 grey">gp-ce-5 mix-2</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 mix-4 border-default p-1 grey">gp-ce-5 mix-4</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+	<div class="gp-ce-5 mix-3 border-default p-1 grey">gp-ce-5 mix-3</div>
+	<div class="gp-ce-5 border-default p-1 grey">gp-ce-5</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+	<pre>
+		<code class="html">
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-9"</span><span class="nt">&gt;</span><span>.gp-ce-9</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-9 mix-6"</span><span class="nt">&gt;</span><span>.gp-ce-9 .mix-6</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4 mix-3"</span><span class="nt">&gt;</span><span>.gp-ce-4 .mix-3</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-4 mix-2"</span><span class="nt">&gt;</span><span>.gp-ce-4 .mix-2</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5 mix-2"</span><span class="nt">&gt;</span><span>.gp-ce-5 .mix-2</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5 mix-4"</span><span class="nt">&gt;</span><span>.gp-ce-5 .mix-4</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5 mix-3"</span><span class="nt">&gt;</span><span>.gp-ce-5 .mix-3</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-ce-5"</span><span class="nt">&gt;</span><span>.gp-ce-5</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		</code>
+	</pre>
+</div>
+<!-- End of HTML Used -->
+<div class="gp-r">
+	<div class="horizontal-line-1"></div>
+</div>
+
+<!-- Responsive columns system -->
+<h3 class="weight-800 f-typoslab mbottom-1 responsive-col-pos">Responsive columns</h3>
+<p>
+	Anda dapat mengatur columns agar mendukung pada beberapa device, seperti: <code>Mobile + Tablet + Desktop</code>, hanya <code>Mobile dan Desktop</code> atau cukup di device <code>Desktop</code> saja.
+</p>
+
+<h4>Mobile and Desktop example:</h4>
+<p>
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</p>
+<div class="gp-r grid-demo">
+	<div class="gp-xsmall-c6 gp-c2 border-default grey p-1">gp-xsmall-c6 gp-c2</div>
+	<div class="gp-xsmall-c3 gp-c4 border-default grey p-1">gp-xsmall-c3 gp-c4</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-xsmall-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c3 gp-ce-4</div>
+	<div class="gp-xsmall-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c3 gp-ce-4</div>
+	<div class="gp-xsmall-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c3 gp-ce-4</div>
+	<div class="gp-xsmall-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c3 gp-ce-4</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-xsmall-c6 gp-ce-3 border-default grey p-1">gp-xsmall-c6 gp-ce-3</div>
+	<div class="gp-xsmall-c4 gp-ce-3 border-default grey p-1">gp-xsmall-c4 gp-ce-3</div>
+	<div class="gp-xsmall-c2 gp-ce-3 border-default grey p-1">gp-xsmall-c2 gp-ce-3</div>
+</div>
+<div class="gp-r grid-demo">
+	<div class="gp-xsmall-c6 gp-c3 border-default grey p-1">gp-xsmall-c6 gp-c3</div>
+	<div class="gp-xsmall-c6 gp-c3 border-default grey p-1">gp-xsmall-c6 gp-c3</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+	<pre>
+		<code class="html">
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-c2"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c3 gp-c4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c3 .gp-c4</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c3 .gp-ce-4"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c3 .gp-ce-4"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c3 .gp-ce-4"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c3 .gp-ce-4"</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-ce-3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-ce-3"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-ce-3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-ce-3"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-ce-3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-ce-3"</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-c3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-c3"</span><span class="nt">&lt;/div&gt;</span>
+				<span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-c3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-c3"</span><span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		</code>
+	</pre>
+</div>
+<!-- End of HTML Used -->
+
+<h4 class="mtop-2">Tablet and Desktop example:</h4>
+<p>
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</p>
+<div class="gp-r grid-demo">
+    <div class="gp-small-c6 gp-c2 border-default grey p-1">gp-small-c6 gp-c2</div>
+    <div class="gp-small-c6 gp-c2 border-default grey p-1">gp-small-c6 gp-c2</div>
+    <div class="gp-small-c6 gp-c2 border-default grey p-1">gp-small-c6 gp-c2</div>
+</div>
+<div class="gp-r grid-demo">
+    <div class="gp-small-c3 gp-ce-4 border-default grey p-1">gp-small-c3 gp-ce-4</div>
+    <div class="gp-small-c3 gp-ce-4 border-default grey p-1">gp-small-c3 gp-ce-4</div>
+    <div class="gp-small-c3 gp-ce-4 border-default grey p-1">gp-small-c3 gp-ce-4</div>
+    <div class="gp-small-c3 gp-ce-4 border-default grey p-1">gp-small-c3 gp-ce-4</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+    <pre>
+        <code class="html">
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-small-c6 .gp-c2</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-small-c6 .gp-c2</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-small-c6 .gp-c2</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        </code>
+    </pre>
+</div>
+
+<h4 class="mtop-2">Mobile, Tablet and Desktop example:</h4>
+<p>
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</p>
+<div class="gp-r grid-demo">
+    <div class="gp-xsmall-c6 gp-small-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c6 gp-small-c3 gp-ce-4</div>
+    <div class="gp-xsmall-c6 gp-small-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c6 gp-small-c3 gp-ce-4</div>
+    <div class="gp-xsmall-c6 gp-small-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c6 gp-small-c3 gp-ce-4</div>
+    <div class="gp-xsmall-c6 gp-small-c3 gp-ce-4 border-default grey p-1">gp-xsmall-c6 gp-small-c3 gp-ce-4</div>
+</div>
+<div class="gp-r grid-demo">
+    <div class="gp-xsmall-c4 gp-small-c6 gp-c2 border-default grey p-1">gp-xsmall-c4 gp-small-c6 gp-c2</div>
+    <div class="gp-xsmall-c4 gp-small-c6 gp-c2 border-default grey p-1">gp-xsmall-c4 gp-small-c6 gp-c2</div>
+    <div class="gp-xsmall-c4 gp-small-c6 gp-c2 border-default grey p-1">gp-xsmall-c4 gp-small-c6 gp-c2</div>
+</div>
+<div class="gp-r grid-demo">
+    <div class="gp-xsmall-c6 gp-small-c3 gp-c3 border-default grey p-1">gp-xsmall-c6 gp-small-c3 gp-c3</div>
+    <div class="gp-xsmall-c6 gp-small-c3 gp-c4 border-default grey p-1">gp-xsmall-c6 gp-small-c3 gp-c4</div>
+</div>
+<!-- HTML Used -->
+<p class="mtop-1">You can use the HTML code as following:</p>
+<div class="html-example block-example">
+    <pre>
+        <code class="html">
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-ce-4"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-ce-4</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c4 gp-small-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-xsmall-c4 .gp-small-c6 .gp-c2</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c4 gp-small-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-xsmall-c4 .gp-small-c6 .gp-c2</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c4 gp-small-c6 gp-c2"</span><span class="nt">&gt;</span><span>.gp-xsmall-c4 .gp-small-c6 .gp-c2</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div </span> <span class="na">class=</span><span class="s">"gp-r"</span><span class="nt">&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-c3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-c3</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-c3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-c3</span><span class="nt">&lt;/div&gt;</span>
+                <span class="nt mleft-2">&lt;div </span> <span class="na">class=</span><span class="s">"gp-xsmall-c6 gp-small-c3 gp-c3"</span><span class="nt">&gt;</span><span>.gp-xsmall-c6 .gp-small-c3 .gp-c3</span><span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        </code>
+    </pre>
+</div>
+<!-- End of HTML Used -->
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+        		

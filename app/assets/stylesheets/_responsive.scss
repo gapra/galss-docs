@@ -1,0 +1,94 @@
+@media all and (min-width: 1025px) {
+  
+}
+
+@media (min-width: 1025px) and (max-width: 1100px){
+    
+}
+
+@media (min-width: 901px) and (max-width: 1024px){
+    
+}
+
+@media (min-width: 801px) and (max-width: 900px){
+    
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+    
+}
+
+@media (min-width: 481px) and (max-width: 600px){
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    
+}
+
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 2cm .5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  select {
+    background: #fff !important;
+  }
+
+}

@@ -1,0 +1,50 @@
+/*!
+ * MARGIN and PADDING Settings
+ */
+
+.nomargin{
+  margin:0px !important;
+}
+.nopadding{
+  padding:0px !important;
+}
+
+@for $i from 0 through 10{
+  .mtop-#{$i} {
+    margin-top: 10px * $i !important;
+  }
+  .mbottom-#{$i} {
+    margin-bottom: 10px * $i !important;
+  }
+  .mleft-#{$i} {
+    margin-left: 10px * $i !important;
+  }
+  .mright-#{$i} {
+    margin-right: 10px * $i !important;
+  }
+  .m-#{$i} {
+    margin: 10px * $i !important;
+  }
+}
+@for $i from 0 through 10{
+  .ptop-#{$i} {
+    padding-top: 10px * $i !important;
+  }
+  .pbottom-#{$i} {
+    padding-bottom: 10px * $i !important;
+  }
+  .pleft-#{$i} {
+    padding-left: 10px * $i !important;
+  }
+  .pright-#{$i} {
+    padding-right: 10px * $i !important;
+  }
+  .p-#{$i} {
+    padding: 10px * $i !important;
+  }
+}
+
+
+/*!
+ * END OF MARGIN and PADDING Seetings
+ */

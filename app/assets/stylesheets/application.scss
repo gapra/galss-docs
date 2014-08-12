@@ -1,0 +1,450 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+@import "author";
+@import "normalize";
+@import "variables";
+@import "font-awesome.css";
+@import "fonts.css";
+@import "mixins";
+@import "border";
+@import "marginpadding";
+@import "typography";
+@import "color";
+@import "navigation";
+@import "grid";
+@import "code";
+@import "table";
+@import "button";
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+  display:block;
+}
+
+audio,canvas,video {
+  display: inline-block;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,a:hover {
+  outline: 0;
+}
+
+
+b,strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,input,select,textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,input {
+  line-height: normal;
+}
+
+button,select {
+  text-transform: none;
+}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font:inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font:{
+		family: $body-font;
+		size: 14px;
+	}
+	color: #333333;
+	background-color: #fff;
+  line-height: 1.44;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+p {
+    margin: 0 0 10px;
+    line-height:1.44;
+}
+
+ul,ol {
+  margin-top:0;
+  margin-bottom:10px;
+}
+ul ul, ul ol, ol ul, ol ol {
+  margin-bottom: 0;
+}
+
+dl {
+  margin-bottom: 20px;
+}
+
+dt, dd {
+  line-height: 1.428571429;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+input, button, select, textarea {
+	font: {
+		family: inherit;
+		size: inherit;
+	}
+	line-height: inherit;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+	@include transition(0.5s ease-in-out);
+	&:hover {
+		color: #2a6496;
+		@include transition(0.5s ease-in-out);
+	}
+	&:focus{
+		outline: thin dotted #333;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px;
+		@include transition(0.5s ease-in-out);
+	}
+}
+
+img {
+    vertical-align: middle;
+    @include transition(0.4s ease-in-out);
+    &:hover{
+        @include transition(0.4s ease-in-out);
+    }
+}
+
+.unstyle-list{
+  list-style: none;
+}
+.fixed{
+  position: fixed;
+}
+
+/*! Container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media (min-width: $screen-small){
+    width: 750px;
+  }
+  @media (min-width: $screen-medium){
+    width: 960px;
+  }
+  @media (min-width: $screen-large){
+    width: 1164px;
+  }
+  &:before{
+    content:"";
+    display:table;
+  }
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+.wrapper{
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/*! End of container */
+
+.head-intro{
+  background-color:$gpgreen;
+  padding: 30px 0;
+}
+.underline{
+  text-decoration: underline;
+}
+
+/*! Style Setting */
+.gp-txt-shadow{
+  text-shadow:0 -2px 2px rgba(0, 0, 0, 0.4);
+}
+/* End of Style Setting */
+
+/*! Sizing */
+.s-full{
+  width:100% !important;
+}
+.s-half{
+  width:50% !important;
+}
+.s-side{
+  width:30% !important;
+}
+.s-med{
+  width:800px !important;
+}
+.s-small{
+  width:400px !important;
+}
+
+.none{
+  display:none;
+}
+.inline-block, .inline-left{
+  display:inline-block;
+}
+.inline-left{
+  margin-right:-5px;
+}
+.inline{
+  display:inline;
+}
+.block{
+  display:block;
+}
+.inherit{
+  display:inherit;
+}
+.initial{
+  display:initial;
+}
+.flex{
+  display:flex;
+}
+.left{
+  float:left !important;
+}
+.right{
+  float:right !important;
+}
+.left:before, .right:before{
+  clear:both;
+}
+.a-left{
+  text-align:left;
+}
+.a-center{
+  text-align:center;
+}
+.a-right{
+  text-align:right;
+}
+.a-justify{
+  text-align:justify;
+}
+
+
+/*! ======= LAYOUTING STYLE ======= */
+
+.gp-header:before, .gp-content:before, .gp-footer:before{
+  content: " ";
+  display:table;
+}
+.gp-header::after, .gp-content::after, .gp-footer::after{
+  clear:both;
+}
+.gp-header, .gp-content, .gp-footer{
+  padding:20px 60px;
+  overflow:auto;
+}
+.gp-header{
+  width:100%;
+}
+.gp-content{
+  width:100%;
+}
+.gp-footer{
+  width:100%;
+}
+.gp-content-title{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.gp-main{
+  width:70%;
+  min-height:200px;
+  display:inline-block;
+}
+.gp-sidebar{
+  width:26%;
+  display:inline-block;
+}
+
+/*! ======= END OF LAYOUTING STYLE ======= */
+
+/*! ======= CONTENT ======= */
+
+/*! container top */
+.gp-highlight-bg{
+  width:100%;
+  min-height:440px;
+  padding:20px 60px;
+  position:relative;
+}
+.gp-box-light{
+  width:100%;
+}
+.gp-bottom-arrow{
+  position:absolute;
+  bottom:0;
+}
+.gp-img-highlight{
+  width:100%;
+  img{
+    width:100%;
+  }
+}
+
+/*! end of container top */
+
+/*! ======= END OF CONTENT ======= */
+
+.gp-fixed-header{
+  position:fixed;
+  width:100%;
+  z-index:2;
+}
+.clear{
+  clear:both;
+}
+
+/* Form setting */
+.gp-form-r{
+  margin-bottom:10px;
+  label{
+    width:180px;
+    display:inline-block;
+    margin-right:20px;
+  }
+  input[type="text"], input[type="password"], input[type="email"], textarea{
+    width:360px;
+    border:1px solid #c0c0c0;
+    padding:5px 10px;
+  }
+}
+/* end of form setting */
+

@@ -1,0 +1,33 @@
+$body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Color var */
+
+$black: #292929;
+$gpblue: #1979d0;
+$gpred: #d02323;
+$gpgreen: #00b28b;
+$gpdarkblue: #0d3253;
+$gpdarkred: #721010;
+$gpdarkgreen: #1b926c;
+$gpgrey: #eeeeee;
+$gpdarkgrey: #969696;
+$gpyellow: #ffd200;
+$gporange: #ff7200;
+$gplightgreen: #CDF1E9;
+
+/* end color var */
+
+/* Media screen var */
+
+$screen-large: 1200px !default;
+$screen-medium: 991px !default;
+$screen-small: 768px !default;
+$screen-xsmall: 480px !default;
+
+/* End of media screen var */
+
+/* Grid system var */
+
+$col-width: (100%/6);
+
+/* End grid system var */

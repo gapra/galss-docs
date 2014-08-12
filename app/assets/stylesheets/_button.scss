@@ -1,0 +1,48 @@
+
+@import "variables";
+
+/*! ======= BUTTON STYLE ======= */
+
+.gp-btn{
+  padding:10px 15px;
+  display:table;
+}
+.gp-btn-large{
+  font-size:20px;
+}
+.gp-btn-small{
+  font-size:12px;
+}
+.gp-border-white{
+  border:1px solid #ffffff;
+  color:#ffffff;
+  &:hover{
+    background:#f5f5f5;
+    color:$gpgreen;
+  }
+}
+.gp-border-darkgrey{
+  border:1px solid $gpdarkgrey;
+  color:$gpdarkgrey;
+  &:hover{
+    background:#f5f5f5;
+    color:$gpgreen;
+  }
+}
+.gp-btn-black, .gp-btn.black{
+  background-color:$black;
+  color:#f5f5f5;
+  &:hover{
+    background-color:$gpdarkgrey;
+    color:$black;
+  }
+}
+.gp-btn.green, .gp-btn-green{
+  color:#f0f0f0;
+  &:hover{
+    background-color:$gpdarkgrey;
+    color:$black;
+  }
+}
+
+/*! ======= END OF BUTTON STYLE ======= */

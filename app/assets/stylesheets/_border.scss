@@ -1,0 +1,129 @@
+/*!
+ * BORDER Styled
+ */
+
+@import "variables";
+
+.border-default{
+  border:1px solid #d5d5d5;
+}
+
+/* Mixin border style */
+@mixin border-style($style){
+  border-style: $style;
+}
+/* Border with setting */
+@for $i from 1 through 10{
+  .border-#{$i} {
+    border-width: 1px * $i;
+  }
+}
+/*! Radius Style */
+@for $i from 1 through 10{
+  .radius-#{$i} {
+    border-radius: 1px * $i;
+  }
+}
+
+
+/*! Solid border style */
+.solid-white{
+  @include border-style(solid);
+  border-color:white;
+}
+.solid-dark{
+  @include border-style(solid);
+  border-color:$black;
+}
+@for $i from 1 through 10{
+  .solid-black-#{$i} {
+    @include border-style(solid);
+    border-color: rgba(0,0,0, $i * 0.1);
+  }
+  .solid-white-#{$i} {
+    @include border-style(solid);
+    border-color: rgba(255,255,255, $i * 0.1);
+  }
+  .border-b-#{$i} {
+    border-bottom-color: rgba(0,0,0, $i * 0.1);
+  }
+}
+.solid-t{
+  border-top-style:solid;
+}
+.solid-b{
+  border-bottom-style:solid;
+}
+.solid-l{
+  border-left-style:solid;
+}
+.solid-r{
+  border-right-style:solid;
+}
+
+/*! Dashed border sytle */
+@for $i from 1 through 10{
+  .dashed-black-#{$i} {
+    @include border-style(dashed);
+    border-color: rgba(0,0,0, $i * 0.1);
+  }
+  .dashed-white-#{$i} {
+    @include border-style(dashed);
+    border-color: rgba(255,255,255, $i * 0.1);
+  }
+}
+.dashed-t{
+  border-top-style:dashed;
+}
+.dashed-b{
+  border-bottom-style:dashed;
+}
+.dashed-l{
+  border-left-style:dashed;
+}
+.dashed-r{
+  border-right-style:dashed;
+}
+
+/*! Dotted border style */
+@for $i from 1 through 10{
+  .dotted-black-#{$i} {
+    @include border-style(dotted);
+    border-color: rgba(0,0,0, $i * 0.1);
+  }
+  .dotted-white-#{$i} {
+    @include border-style(dotted);
+    border-color: rgba(255,255,255, $i * 0.1);
+  }
+}
+.dotted-t{
+  border-top-style:dotted;
+}
+.dotted-b{
+  border-bottom-style:dotted;
+}
+.dotted-l{
+  border-left-style:dotted;
+}
+.dotted-r{
+  border-right-style:dotted;
+}
+
+/*! No border */
+.noborder{
+  border:0px !important;
+}
+
+@for $i from 1 to 10{
+  .horizontal-line-#{$i} {
+    margin-top:20px;
+    margin-bottom:10px;
+    width:100%;
+    height: 1px * $i;
+    background:#ccc;
+  }
+}
+
+/*!
+ * END of BORDER Style
+ */

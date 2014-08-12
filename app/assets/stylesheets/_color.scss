@@ -1,0 +1,100 @@
+/*! 
+ * COLOR SYSTEM 
+ */
+
+ @import "variables";
+
+.black{
+  background-color:$black;
+}
+.white{
+  background-color:#ffffff;
+}
+.off-white{
+  background-color:#f5f5f5;
+}
+.blue{
+  background-color:$gpblue;
+}
+.red{
+  background-color:$gpred;
+}
+.green{
+  background-color:$gpgreen;
+}
+.grey{
+  background-color:$gpgrey;
+}
+.yellow{
+  background-color:$gpyellow;
+}
+.orange{
+  background-color:$gporange;
+}
+.dark-blue{
+  background-color:$gpdarkblue;
+}
+.dark-red{
+  background-color:$gpdarkred;
+}
+.dark-green{
+  background-color:$gpdarkgreen;
+}
+.dark-grey{
+  background-color:$gpdarkgrey;
+}
+
+/*! Text colors */
+.txt-black{
+  color:$black;
+}
+.txt-white{
+  color:#ffffff;
+}
+.txt-off-white{
+  color:#f0f0f0;
+}
+.txt-blue{
+  color:$gpblue;
+}
+.txt-red{
+  color:$gpred;
+}
+.txt-green{
+  color:$gpgreen;
+}
+.txt-grey{
+  color:$gpgrey;
+}
+.txt-yellow{
+  color:$gpyellow;
+}
+.txt-orange{
+  color:$gporange;
+}
+.txt-dark-blue{
+  color:$gpdarkblue;
+}
+.txt-dark-red{
+  color:$gpdarkred;
+}
+.txt-dark-green{
+  color:$gpdarkgreen;
+}
+.txt-dark-grey{
+  color:$gpdarkgrey;
+}
+.txt-light-green{
+  color:$gplightgreen;
+}
+
+/*! Opacity style */
+@for $i from 1 through 10{
+  .opa-#{$i} {
+    opacity: 0.1 * $i;
+  }
+}
+
+/*!
+ * END OF COLOR SYSTEM 
+ */

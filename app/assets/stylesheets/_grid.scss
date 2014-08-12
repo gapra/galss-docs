@@ -1,0 +1,155 @@
+
+@import "variables";
+
+/*! ======= GRID SYSTEM ======= */
+
+.gp-r{
+  margin-left:-5px;
+  margin-right:-5px;
+  &:before{
+    content:"";
+    display:table;
+  }
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+.gp-r [class^=gp-c], .gp-r [class^=gp-xsmall-c], .gp-r [class^=gp-small-c], .gp-r [class^=gp-ce-]{
+  position: relative;
+  padding:10px;
+}
+
+.gp-c1, .gp-c2, .gp-c3, .gp-c4, .gp-c5, .gp-c6{
+  @media (min-width: $screen-medium){
+    float:left;
+  }
+}
+
+/*! Responsive format */
+
+.gp-xsmall-c1, .gp-xsmall-c2, .gp-xsmall-c3, .gp-xsmall-c4, .gp-xsmall-c5, .gp-xsmall-c6{
+  float: left;
+}
+
+@for $i from 1 through 6 {
+  .gp-xsmall-c#{$i} {
+    width: $col-width * $i;
+  }
+  .gp-xsmall-c#{$i}-mc {
+    width: $col-width * $i;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+/*! Small format */
+
+@media (min-width: $screen-small){
+  .gp-small-c1, .gp-small-c2, .gp-small-c3, .gp-small-c4, .gp-small-c5, .gp-small-c6 {
+    float:left;
+  }
+  @for $i from 1 through 6 {
+    .gp-small-c#{$i} {
+      width: $col-width * $i;
+    }
+  }
+}
+
+
+/*! Medium - Large / default format */
+
+@media (min-width: $screen-medium){
+  @for $i from 1 through 6 {
+    .gp-c#{$i} {
+      width: $col-width * $i;
+    }
+  }
+}
+
+/*! Centered colums format */
+
+@for $i from 1 through 6 {
+  .gp-c#{$i}-mc {
+    width: $col-width * $i;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+/*! Exploded format (responsive support) */
+
+@media (min-width: $screen-medium){
+  @for $i from 1 through 12 {
+    .gp-ce-#{$i} {
+      float: left;
+    }
+  }
+  @for $i from 1 through 12 {
+    .gp-ce-#{$i} {
+      $ce-width: (100%/$i);
+      width: $ce-width;
+    }
+  }
+  @for $i from 1 through 2 {
+    .gp-ce-2.mix-#{$i} {
+      width: (100%/2) * $i;
+    }
+  }
+  @for $i from 1 through 3 {
+    .gp-ce-3.mix-#{$i} {
+      width: (100%/3) * $i;
+    }
+  }
+  @for $i from 1 through 4 {
+    .gp-ce-4.mix-#{$i} {
+      width: (100%/4) * $i;
+    }
+  }
+  @for $i from 1 through 5 {
+    .gp-ce-5.mix-#{$i} {
+      width: (100%/5) * $i;
+    }
+  }
+  @for $i from 1 through 6 {
+    .gp-ce-6.mix-#{$i} {
+      width: (100%/6) * $i;
+    }
+  }
+  @for $i from 1 through 7 {
+    .gp-ce-7.mix-#{$i} {
+      width: (100%/7) * $i;
+    }
+  }
+  @for $i from 1 through 8 {
+    .gp-ce-8.mix-#{$i} {
+      width: (100%/8) * $i;
+    }
+  }
+  @for $i from 1 through 9 {
+    .gp-ce-9.mix-#{$i} {
+      width: (100%/9) * $i;
+    }
+  }
+  @for $i from 1 through 10 {
+    .gp-ce-10.mix-#{$i} {
+      width: (100%/10) * $i;
+    }
+  }
+  @for $i from 1 through 11 {
+    .gp-ce-11.mix-#{$i} {
+      width: (100%/11) * $i;
+    }
+  }
+  @for $i from 1 through 12 {
+    .gp-ce-12.mix-#{$i} {
+      width: (100%/12) * $i;
+    }
+  }
+}
+
+
+
+
+/*! ======= END OF GRID SYSTEM ======= */

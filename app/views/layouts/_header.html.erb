@@ -1,0 +1,26 @@
+<header>
+	<nav class="navi-bar navi-bar-default">
+		<div class="container">
+			<%= link_to 'Galss', root_path, { :class => "navi-logo"} %>
+			<ul class="navi navi-menu for-main-menu">
+				<li class="<%=is_active('')%>"><%= link_to(root_path) do %><i class="fa fa-home font-16"></i><% end %></li>
+				<li class="<%=is_active('gettingstarted')%>"><%= link_to 'Getting Started', gettingstarted_path %></li>
+				<li class="<%=is_active('documentations')%>"><%= link_to 'Documentations', documentations_path %>
+					<ul>
+						<li><%= link_to 'Stylesheet', stylesheetdocumentation_path %></li>
+						<li><a href="#">Javascript</a></li>
+					</ul>
+				</li>
+				<li class="<%=is_active('templates')%>"><%= link_to 'Templates', templates_path %></li>
+				<li class="<%=is_active('about')%>"><%= link_to 'About', about_path %></li>
+				<li class="<%=is_active('blog')%>"><%= link_to 'Blog', 'blog' %></li>
+			</ul>
+			<ul class="navi navi-menu right for-media">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-git"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
