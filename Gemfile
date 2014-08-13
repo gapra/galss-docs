@@ -8,7 +8,11 @@ gem 'rails', '3.2.1'
 #gem 'sqlite3'
 
 group :development, :test do
+<<<<<<< HEAD
 	gem 'sglite3'
+=======
+  gem 'sglite3'
+>>>>>>> b0d8c48548143353a8e29a3b588f3ff4ad507a84
 end
 
 group :production do
