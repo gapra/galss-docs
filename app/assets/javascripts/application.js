@@ -45,46 +45,6 @@ $(function(){
     });
 	/*! End of active menu setting */
 	
-	/*! Modal Gallery */
-	$('.gaplight').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: false,
-			titleSrc: function(item) {
-				return item.el.attr('title') + '';
-			}
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-				return element.find('img');
-			}
-		}
-	});
-    /*! Modal Inline */
-    $('.view-book').magnificPopup({
-        item: {
-            src: '#open-books',
-            type: 'inline'
-        },
-        mainClass: 'mfp-with-zoom',
-        zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-            easing: 'ease-in-out',
-			opener: function(element) {
-				return element.find('div');
-			}
-		}
-    });
 	
 	/*! back to top */
 	var offset = 520;
@@ -116,7 +76,6 @@ $(function(){
 
 	var docmenu = $('.start-doc');
 	var docmenuPos = docmenu.offset();
-
 	$(window).scroll(function(){
 		if($(this).scrollTop() > docmenuPos.top) {
 			$('nav.vertical-menu').addClass('doc-menu');
@@ -218,7 +177,6 @@ $(function(){
 			$('li.grid-system').css('position', 'relative');
 		}
 	});
-
 	$('.default-col').click(function(){
 		$('html, body').animate({
 			scrollTop : defcolPos.top
@@ -290,8 +248,5 @@ $(function(){
 			scrollTop : typofontfacePos.top
 		});
 	});
-
-	/* Highligher menu */
-
 });
 
