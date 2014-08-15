@@ -11,9 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery.min
 //= require jquery_ujs
 //= require_tree .
+//= require jquery.min
 $(document).ready(function(){
 	'use strict';
 	
