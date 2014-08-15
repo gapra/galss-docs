@@ -5,18 +5,15 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
+gem 'sqlite3'
 
-group :development, :test do
-<<<<<<< HEAD
+group :development do
 	gem 'sglite3'
-=======
-  gem 'sglite3'
->>>>>>> b0d8c48548143353a8e29a3b588f3ff4ad507a84
 end
 
 group :production do
 	gem 'pg'
+	gem "activerecord-postgresql-adapter"
 end
 
 
