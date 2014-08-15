@@ -1,8 +1,8 @@
 
 @import "normalize";
 @import "variables";
-@import "font-awesome.css";
-@import "fonts.css";
+@import "font-awesome";
+@import "fonts";
 @import "mixins";
 @import "border";
 @import "marginpadding";
@@ -13,6 +13,7 @@
 @import "code";
 @import "table";
 @import "button";
+@import "sites";
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
   display:block;
