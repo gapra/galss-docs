@@ -15,7 +15,6 @@
 //= require_tree .
 //= require jquery.min
 $(document).ready(function(){
-	'use strict';
 	
 	/*! Sub Menu Effect */
 	$('.navi-bar-default .navi-menu li').hover(function(){
@@ -40,8 +39,9 @@ $(document).ready(function(){
 
 	/*! Active menu setting */
 	$('ul.navi li a').each(function(index) {
-        if(this.href.trim() == window.location)
+        if(this.href.trim() == window.location) {
             $(this).closest('li').addClass("active");
+        }
     });
 	/*! End of active menu setting */
 	
@@ -112,10 +112,7 @@ $(document).ready(function(){
 			opacity: '0.6'
 		}, 300);
 	});
-});
 
-$(document).ready(function(){
-	'use strict';
 
 	var docmenu = $('.start-doc');
 	var docmenuPos = docmenu.offset();
@@ -296,7 +293,5 @@ $(document).ready(function(){
 
 	/* Highligher menu */
 
-	
-	
 });
 
