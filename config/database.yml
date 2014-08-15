@@ -20,7 +20,7 @@ test:
 
 production:
   adapter: postgresql
-  database: activerecord-postgresql-adapter
+  database: db_production
   username: 
   password: 
   host: localhost
