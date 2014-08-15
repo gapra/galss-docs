@@ -15,7 +15,6 @@
 //= require_tree .
 //= require jquery.min
 $(function(){
-	
 	/*! Sub Menu Effect */
 	$('.navi-bar-default .navi-menu li').hover(function(){
 		$(this).addClass('hover');
