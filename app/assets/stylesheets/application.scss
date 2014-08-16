@@ -239,9 +239,6 @@ img {
     }
 }
 
-.unstyle-list{
-  list-style: none;
-}
 .fixed{
   position: fixed;
 }
@@ -344,18 +341,6 @@ img {
 }
 .left:before, .right:before{
   clear:both;
-}
-.a-left{
-  text-align:left;
-}
-.a-center{
-  text-align:center;
-}
-.a-right{
-  text-align:right;
-}
-.a-justify{
-  text-align:justify;
 }
 
 

@@ -1,9 +1,6 @@
-$(document).ready(function(){
-	'use strict';
-
+$(function(){
 	var docmenu = $('.start-doc');
 	var docmenuPos = docmenu.offset();
-
 	$(window).scroll(function(){
 		if($(this).scrollTop() > docmenuPos.top) {
 			$('nav.vertical-menu').addClass('doc-menu');
@@ -210,9 +207,29 @@ $(document).ready(function(){
 		});
 	});
 
-	/* Highligher menu */
+	/* Typography sub menu */
+	var colorOpt = $('.color-pos');
+	var colorPos = colorOpt.offset();
+	$('.color-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : colorPos.top
+		});
+	});
 
-	
-	
+	var bgcolorOpt = $('.bg-color-pos');
+	var bgcolorPos = bgcolorOpt.offset();
+	$('.bg-color').click(function(){
+		$('html, body').animate({
+			scrollTop : bgcolorPos.top
+		});
+	});
+
+	var txtcolorOpt = $('.txt-color-pos');
+	var txtcolorPos = txtcolorOpt.offset();
+	$('.txt-color').click(function(){
+		$('html, body').animate({
+			scrollTop : txtcolorPos.top
+		});
+	});
 });
 

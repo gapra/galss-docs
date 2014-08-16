@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require_tree .
 //= require jquery.min
-$(document).ready(function(){
+//= require site
+$(function(){
 	/*! Sub Menu Effect */
 	$('.navi-bar-default .navi-menu li').hover(function(){
 		$(this).addClass('hover');

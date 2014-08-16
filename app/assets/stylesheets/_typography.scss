@@ -105,4 +105,102 @@ small, .small {
   font-size: 20px;
 }
 
+.a-left{
+  text-align:left;
+}
+.a-center{
+  text-align:center;
+}
+.a-right{
+  text-align:right;
+}
+.a-justify{
+  text-align:justify;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.unstyle-list{
+  list-style: none;
+}
+.unlist{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+blockquote {
+  position: relative;
+  padding: 10px 20px 10px 40px;
+  margin: 0 0 20px;
+  font-size: 18px;
+  border-left: 4px solid #ddd;
+  &:before {
+    position: absolute;
+    left: 5px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #999;
+    content: "\f10d";
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer {
+    display: block;
+    font-size: 80%;
+    color: #666;
+    &:before {
+      content: "__ ";
+    }
+  }
+}
+.blockquote-right {
+  padding: 0 40px 0 0;
+  text-align: right;
+  border-right: 4px solid #ddd;
+  border-left: 0;
+  &:before {
+    content: "";
+  }
+  &:after {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: table;
+    clear: both;
+    color: #999;
+    content: "\f10e";
+  }
+  footer {
+    &:before {
+      content: "";
+    }
+    &:after {
+      content: " __";
+    }
+  }
+}
+
 /*! End of TYPOGRAPHY Style */
