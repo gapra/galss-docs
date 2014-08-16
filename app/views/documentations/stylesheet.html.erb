@@ -59,12 +59,14 @@
 	        						</ul>
 	        					</li>
 	        					<li>
-                                    <a href="javascript:void()" class="a-menu"><i class="fa fa-caret-right"></i> Tables</a>
+                                    <a href="javascript:void()" class="a-menu table-opt"><i class="fa fa-caret-right"></i> Tables</a>
 	        						<ul class="unstyle-list pleft-2">
-	        							<li><a href="#centered-column"><i class="fa fa-angle-right"></i> Centered column</a></li>
-	        							<li><a href="#exploded-column"><i class="fa fa-angle-right"></i> Exploded column</a></li>
-	        							<li><a href="#column-size"><i class="fa fa-angle-right"></i> Columns size</a></li>
-	        							<li><a href="#responsive"><i class="fa fa-angle-right"></i> Responsive column</a></li>
+	        							<li><a href="#basic-tables" class="basictables"><i class="fa fa-angle-right"></i> Basic Tables</a></li>
+	        							<li><a href="#even-rows" class="evenrows"><i class="fa fa-angle-right"></i> Even Rows</a></li>
+	        							<li><a href="#odd-rows" class="oddrows"><i class="fa fa-angle-right"></i> Odd Rows</a></li>
+                                        <li><a href="#table-border" class="tableborder"><i class="fa fa-angle-right"></i> Table Border</a></li>
+                                        <li><a href="#hovered-rows" class="hoveredrows"><i class="fa fa-angle-right"></i> Hovered Rows</a></li>
+	        							<li><a href="#responsive-table" class="responsivetable"><i class="fa fa-angle-right"></i> Responsive Tables</a></li>
 	        						</ul>
 	        					</li>
 	        					<li>
@@ -170,6 +172,7 @@
                 <%= render "grid" %>
                 <%= render "typo" %>
                 <%= render "color" %>
+                <%= render "table" %>
 
             </div>
 		</div>

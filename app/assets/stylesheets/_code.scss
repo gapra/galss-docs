@@ -56,7 +56,7 @@ sub {
   bottom: -0.25em;
 }
 
-.block-example {
+.block-example, .block-example-table {
 	background-color:#fff;
 	border:1px solid #ddd;
 	@include border-radius(3px);

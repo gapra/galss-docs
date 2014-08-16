@@ -283,7 +283,7 @@ $(function(){
 		});
 	});
 
-	/* Typography sub menu */
+	/* Color sub menu */
 	var colorOpt = $('.color-pos');
 	var colorPos = colorOpt.offset();
 	$('.color-opt').click(function(){
@@ -305,6 +305,63 @@ $(function(){
 	$('.txt-color').click(function(){
 		$('html, body').animate({
 			scrollTop : txtcolorPos.top
+		});
+	});
+
+	/* Tables sub menu */
+	var tableOpt = $('.tables-pos');
+	var tablePos = tableOpt.offset();
+	$('.table-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : tablePos.top
+		});
+	});
+
+	var basictableOpt = $('.basictables-pos');
+	var basictablePos = basictableOpt.offset();
+	$('.basictables').click(function(){
+		$('html, body').animate({
+			scrollTop : basictablePos.top
+		});
+	});
+
+	var evenrowsOpt = $('.evenrows-pos');
+	var evenrowsPos = evenrowsOpt.offset();
+	$('.evenrows').click(function(){
+		$('html, body').animate({
+			scrollTop : evenrowsPos.top
+		});
+	});
+
+	var oddrowsOpt = $('.oddrows-pos');
+	var oddrowsPos = oddrowsOpt.offset();
+	$('.oddrows').click(function(){
+		$('html, body').animate({
+			scrollTop : oddrowsPos.top
+		});
+	});
+
+	var tableborderOpt = $('.tableborder-pos');
+	var tableborderPos = tableborderOpt.offset();
+	$('.tableborder').click(function(){
+		$('html, body').animate({
+			scrollTop : tableborderPos.top
+		});
+	});
+
+	var hoveredrowsOpt = $('.hoveredrows-pos');
+	var hoveredrowsPos = hoveredrowsOpt.offset();
+	$('.hoveredrows').click(function(){
+		$('html, body').animate({
+			scrollTop : hoveredrowsPos.top
+		});
+	});
+
+	var responsivetableOpt = $('.responsivetable-pos');
+	var responsivetablePos = responsivetableOpt.offset();
+	$('.responsivetable').click(function(){
+		$('html, body').animate({
+			scrollTop : responsivetablePos.top
 		});
 	});
 });
