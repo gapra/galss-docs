@@ -178,6 +178,38 @@ $(document).ready(function(){
 		});
 	});
 
+	var typoalignOpt = $('.typo-align-pos');
+	var typoalignPos = typoalignOpt.offset();
+	$('.typo-align').click(function(){
+		$('html, body').animate({
+			scrollTop : typoalignPos.top
+		});
+	});
+
+	var typotransformOpt = $('.typo-transform-pos');
+	var typotransformPos = typotransformOpt.offset();
+	$('.typo-transform').click(function(){
+		$('html, body').animate({
+			scrollTop : typotransformPos.top
+		});
+	});
+
+	var typolistOpt = $('.typo-lists-pos');
+	var typolistPos = typolistOpt.offset();
+	$('.typo-lists').click(function(){
+		$('html, body').animate({
+			scrollTop : typolistPos.top
+		});
+	});
+
+	var typoblockquotesOpt = $('.typo-blockquotes-pos');
+	var typoblockquotesPos = typoblockquotesOpt.offset();
+	$('.typo-bquotes').click(function(){
+		$('html, body').animate({
+			scrollTop : typoblockquotesPos.top
+		});
+	});
+
 	/* Highligher menu */
 
 	
