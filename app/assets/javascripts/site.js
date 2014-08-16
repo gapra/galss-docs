@@ -1,3 +1,4 @@
+/*
 $(function(){
 	var docmenu = $('.start-doc');
 	var docmenuPos = docmenu.offset();
@@ -31,7 +32,7 @@ $(function(){
 	});
 
 	/* Overview sub menu */
-
+/*
 	var overviewOpt = $('.overview-pos');
 	var overviewPos = overviewOpt.offset();
 	$('.overview').click(function(){
@@ -73,7 +74,7 @@ $(function(){
 	});
 
 	/* Grid sub menu */
-
+/*
 	var gridSys = $('.grid-sys-pos');
 	var gridSysPos = gridSys.offset();
 	$('.grid-sys').click(function(){
@@ -142,7 +143,7 @@ $(function(){
 	});
 
 	/* Typography sub menu */
-
+/*
 	var typoOpt = $('.typo-pos');
 	var typoPos = typoOpt.offset();
 	$('.typo-opt').click(function(){
@@ -208,6 +209,7 @@ $(function(){
 	});
 
 	/* Typography sub menu */
+/*
 	var colorOpt = $('.color-pos');
 	var colorPos = colorOpt.offset();
 	$('.color-opt').click(function(){
@@ -233,3 +235,4 @@ $(function(){
 	});
 });
 
+*/
