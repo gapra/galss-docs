@@ -364,4 +364,31 @@ $(function(){
 			scrollTop : responsivetablePos.top
 		});
 	});
+
+	/* Form sub menu */
+	var formOpt = $('.form-pos');
+	var formPos = formOpt.offset();
+	$('.form-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : formPos.top
+		});
+	});
+
+	/* Button sub menu */
+	var buttonOpt = $('.button-pos');
+	var buttonPos = buttonOpt.offset();
+	$('.button-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : buttonPos.top
+		});
+	});
+
+	/* Image sub menu */
+	var imageOpt = $('.image-pos');
+	var imagePos = imageOpt.offset();
+	$('.image-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : imagePos.top
+		});
+	});
 });

@@ -26,6 +26,7 @@
 @import "grid";
 @import "code";
 @import "table";
+@import "form";
 @import "button";
 @import "sites";
 
@@ -418,19 +419,4 @@ img {
   clear:both;
 }
 
-/* Form setting */
-.gp-form-r{
-  margin-bottom:10px;
-  label{
-    width:180px;
-    display:inline-block;
-    margin-right:20px;
-  }
-  input[type="text"], input[type="password"], input[type="email"], textarea{
-    width:360px;
-    border:1px solid #c0c0c0;
-    padding:5px 10px;
-  }
-}
-/* end of form setting */
 

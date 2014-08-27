@@ -70,13 +70,18 @@
 	        						</ul>
 	        					</li>
 	        					<li>
-                                    <a href="javascript:void()" class="a-menu"><i class="fa fa-caret-right"></i> Forms</a>
+                                    <a href="javascript:void()" class="a-menu form-opt"><i class="fa fa-caret-right"></i> Forms</a>
+                                    <ul class="unstyle-list pleft-2">
+                                        <li><a href="#default-form" class="defaultform"><i class="fa fa-angle-right"></i> Default Form</a></li>
+                                        <li><a href="#horizontal-form" class="horizontalform"><i class="fa fa-angle-right"></i> Horizontal Form</a></li>
+                                        <li><a href="#inline-form" class="inlineform"><i class="fa fa-angle-right"></i> Inline Form</a></li>
+                                    </ul>
                                 </li>
 	        					<li>
-                                    <a href="javascript:void()" class="a-menu"><i class="fa fa-caret-right"></i> Buttons</a>
+                                    <a href="javascript:void()" class="a-menu button-opt"><i class="fa fa-caret-right"></i> Buttons</a>
                                 </li> 
 	        					<li>
-                                    <a href="javascript:void()" class="a-menu"><i class="fa fa-caret-right"></i> Images</a>
+                                    <a href="javascript:void()" class="a-menu image-opt"><i class="fa fa-caret-right"></i> Images</a>
                                 </li>
 	        					<li>
                                     <a href="javascript:void()" class="a-menu"><i class="fa fa-caret-right"></i> Helper</a>
@@ -173,6 +178,9 @@
                 <%= render "typo" %>
                 <%= render "color" %>
                 <%= render "table" %>
+                <%= render "form" %>
+                <%= render "button" %>
+                <%= render "image" %>
 
             </div>
 		</div>
