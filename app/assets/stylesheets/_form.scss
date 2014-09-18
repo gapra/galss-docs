@@ -8,6 +8,20 @@ fieldset.gp-form {
 	padding: 0;
 	border: 0;
 }
+input[type="text"].input-large, input[type="email"].input-large, input[type="password"].input-large, select.input-large {
+	height: 46px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px
+}
+input[type="text"].input-small, input[type="email"].input-small, input[type="password"].input-small, select.input-small {
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
 input[type="text"], input[type="email"], input[type="password"], select, textarea {
 	display: block;
 	height: 34px;
@@ -32,6 +46,12 @@ input[type="checkbox"], input[type="radio"] {
 input[type="file"] {
 	display: block;
 }
+.gp-r .gp-form [class^=gp-c], .gp-r .gp-form [class^=gp-xsmall-c], .gp-r .gp-form [class^=gp-small-c], .gp-r .gp-form [class^=gp-ce-] {
+	padding: 0 10px;
+}
+.gp-r .gp-form label[class^=gp-c], .gp-r .gp-form label[class^=gp-xsmall-c], .gp-r .gp-form label[class^=gp-small-c], .gp-r .gp-form label[class^=gp-ce-] {
+	padding: 7px 15px 0 7px;
+}
 .gp-form {
 	label {
 		display: inline-block;
@@ -41,9 +61,9 @@ input[type="file"] {
 	}
 	.default-form {
 		margin-bottom: 12px;
-		input[type="text"], input[type="email"], input[type="password"], select, textarea {
+		/*input[type="text"], input[type="email"], input[type="password"], select, textarea {
 			width: 100%;
-		}
+		}*/
 		textarea {
 			min-width: 100%;
 			max-width: 100%;
@@ -76,11 +96,26 @@ input[type="file"] {
 		input[type="file"] {
 			padding: 0;
 		}
+		input[type="text"], input[type="email"], input[type="password"], select, textarea {
+			padding: 6px 12px;
+		}
 		textarea {
 			max-width: 100%;
 			height: 120px;
 			resize: none;
 		}
+	}
+	.inline-form {
+		display: inline-block;
+		label {
+			margin-bottom: 2px;
+		}
+		.checkbox, .radio {
+			padding-left: 0px;
+		}
+	}
+	.label-hide {
+		display: none;
 	}
 }
 
@@ -95,12 +130,74 @@ input[type="file"] {
 		margin-left: -20px;
 	}
 }
+fieldset .checkbox-inline, fieldset .radio-inline {
+	display: inline-block;
+	padding-left: 20px;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
 .checkbox-inline, .radio-inline {
 	display: inline-block;
 	padding-left: 20px;
 	margin: 0 10px 0 0;
 	vertical-align: middle;
 	cursor: pointer;
+	input[type="checkbox"], input[type="radio"] {
+		position: absolute;
+		margin-left: -20px;
+	}
+}
+.form-auto {
+	width: auto;
+}
+.inline-form {
+	display: inline-block;
+}
+/*input[type="text"], input[type="email"], input[type="password"], select, textarea {
+	width: 100%;
+}*/
+.form-length {
+	width: 100%;
+}
+textarea {
+	height: auto;
+}
+select[multiple], select[size] {
+	height: auto;
+}
+.checkbox.disable, .radio.disable {
+	cursor: not-allowed;
+	color: rgba(0,0,0,0.6);
+}
+fieldset[disabled] input, fieldset[disabled] select, fieldset[disabled] textarea, fieldset[disabled] button, input[disabled], select[disabled], textarea[disabled], button[disabled] {
+	cursor: not-allowed !important;
+	background-color: #eee;
+	opacity: 1;
+}
+fieldset[disabled] .checkbox, fieldset[disabled] .radio {
+	cursor: not-allowed;
+	color: #999;
+}
+.gp-btn.disabled, .gp-btn[disabled], fieldset[disabled] .gp-btn {
+	pointer-events: none;
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity: .8;
+}
+input[disabled], select[disabled], textarea[disabled] {
+	color: #999;
+}
+input[type=radio][disabled], input[type=checkbox][disabled], input[type=radio].disabled, input[type=checkbox].disabled, fieldset[disabled] input[type=radio], fieldset[disabled] input[type=checkbox] {
+	cursor: not-allowed;
+}
+.radio+.radio, .checkbox+.checkbox {
+	margin-top: -5px;
+}
+.example-sizing-form select, .example-sizing-form input[type=text]+input[type=text] {
+	margin-top: 10px;
 }
 .input-info {
 	display: block;

@@ -113,10 +113,6 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {
   cursor: pointer;
 }
 
-button[disabled],html input[disabled] {
-  cursor: default;
-}
-
 input[type="checkbox"],input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -419,7 +415,7 @@ img {
   clear:both;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
@@ -444,5 +440,5 @@ img {
 }
 ::-webkit-resizer {
     background-color: #666;
-}
+}*/
 

@@ -10,11 +10,21 @@
 		<form role="form">
 			<div class="default-form">
 				<label>Username</label>
-				<input type="text" placeholder="Username / Email address">
+				<input type="text" class="form-length" placeholder="Username / Email address">
 			</div>
 			<div class="default-form">
 				<label>Password</label>
-				<input type="password" placeholder="Password">
+				<input type="password" class="form-length" placeholder="Password">
+			</div>
+			<div class="default-form">
+				<label>Select option</label>
+				<select class="form-length">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
 			</div>
 			<div class="default-form">
 				<div class="checkbox">
@@ -96,43 +106,69 @@
 		<form role="form">
 			<div class="horizontal-form">
 				<label class="gp-small-c1">Email Address</label>
-				<input type="text" class="gp-small-c5" placeholder="Email address">
+				<div class="gp-small-c5">
+					<input type="text" class="form-length" placeholder="Email address">
+				</div>
 			</div>
 			<div class="horizontal-form">
 				<label class="gp-small-c1">Password</label>
-				<input type="password" class="gp-small-c5" placeholder="Password">
+				<div class="gp-small-c5">
+					<input type="password" class="form-length" placeholder="Password">
+				</div>
+			</div>
+			<div class="horizontal-form">
+				<label class="gp-small-c1">Select option</label>
+				<div class="gp-small-c5">
+					<select class="form-length">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
 			</div>
 			<div class="horizontal-form">
 				<label class="gp-small-c1">Choose Option</label>
-				<div class="radio">
-					<div class="radio-inline">
-						<input type="radio"> Radio button
-					</div>
-					<div class="radio-inline">
-						<input type="radio"> Radio button
+				<div class="gp-small-c5">
+					<div class="radio">
+						<div class="radio-inline">
+							<input type="radio"> Radio button
+						</div>
+						<div class="radio-inline">
+							<input type="radio"> Radio button
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="horizontal-form">
 				<label class="gp-small-c1">Checkbox</label>
-				<div class="checkbox">
-					<div class="checkbox-inline">
-						<input type="checkbox"> Checkbox
+				<div class="gp-small-c5">
+					<div class="checkbox">
+						<div class="checkbox-inline">
+							<input type="checkbox"> Checkbox
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="horizontal-form">
 				<label class="gp-small-c1">Input File</label>
-				<input type="file" class="gp-small-c5">
-				<p class="input-info">Help info lorem ipsum dolor ipsum, consectetur adipisicing elit</p>
+				<div class="gp-small-c5">
+					<input type="file" class="form-length">
+					<p class="input-info">Help info lorem ipsum dolor ipsum, consectetur adipisicing elit</p>
+				</div>
 			</div>
 			<div class="horizontal-form">
 				<label class="gp-small-c1">Textarea</label>
-				<textarea class="gp-small-c5"></textarea>
+				<div class="gp-small-c5">
+					<textarea class="form-length"></textarea>
+				</div>
 			</div>
 			<div class="horizontal-form">
 				<label class="gp-small-c1"></label>
-				<input type="submit" class="gp-btn default-btn" value="Submit">
+				<div class="gp-small-c5">
+					<input type="submit" class="gp-btn default-btn" value="Submit">
+				</div>
 			</div>
 		</form>
 	</fieldset>
@@ -198,7 +234,129 @@
 </p>
 
 <div class="block-example">
+	<fieldset class="gp-form">
+		<form role="form">
+			<div class="inline-form">
+				<label>Username</label>
+				<input type="text" placeholder="Username">
+			</div>
+			<div class="inline-form">
+				<label>Password</label>
+				<input type="password" placeholder="Password">
+			</div>
+			<div class="inline-form">
+				<div class="checkbox">
+					<div class="checkbox-inline">
+						<input type="checkbox"> Remember me
+					</div>
+				</div>
+			</div>
+			<div class="inline-form">
+				<input type="submit" class="gp-btn default-btn" value="Login">
+			</div>
+		</form>
+	</fieldset>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+			<span class="nt">&lt;fieldset</span><span class="na"> class=</span><span class="s">"gp-form"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;form</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"inline-form"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;label&gt;</span><span>Username</span><span class="nt">&lt;/label&gt;</span>
+						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"text"</span><span class="na"> placeholder=</span><span class="s">"Username"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;/div&gt;</span>
+					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"inline-form"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;label&gt;</span><span>Password</span><span class="nt">&lt;/label&gt;</span>
+						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"password"</span><span class="na"> placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;/div&gt;</span>
+					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"inline-form"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+								<span class="mleft-10 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span><span> Remember me</span>
+							<span class="mleft-8 nt">&lt;/div&gt;</span>
+						<span class="mleft-6 nt">&lt;/div&gt;</span>
+					<span class="mleft-4 nt">&lt;/div&gt;</span>
+					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"inline-form"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"submit"</span><span class="na"> class=</span><span class="s">"gp-btn default-btn"</span><span class="na"> value=</span><span class="s">"Login"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;/div&gt;</span>
+				<span class="mleft-2 nt">&lt;/form&gt;</span>
+			<span class="nt">&lt;/fieldset&gt;>
+		</code>
+	</pre>
+</div>
 
+<h4 class="mtop-3"><strong>Inline Forms</strong> without label</h4>
+<p>Anda dapat menggunakan inline form tanpa label, tambahkan class <code>.label-hide</code> pada label form. Ex: <code>&lt;label class="label-hide"&gt;</code></p>
+
+<div class="block-example">
+	<fieldset class="gp-form">
+		<form role="form">
+			<div class="inline-form">
+				<label class="label-hide">Username</label>
+				<input type="text" placeholder="Username">
+			</div>
+			<div class="inline-form">
+				<label class="label-hide">Password</label>
+				<input type="password" placeholder="Password">
+			</div>
+			<div class="inline-form">
+				<div class="checkbox">
+					<div class="checkbox-inline">
+						<input type="checkbox"> Remember me
+					</div>
+				</div>
+			</div>
+			<div class="inline-form">
+				<input type="submit" class="gp-btn default-btn" value="Login">
+			</div>
+		</form>
+	</fieldset>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+			<span class="nt">&lt;fieldset</span><span class="na"> class=</span><span class="s">"gp-form"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;form</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"inline-form"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"label-hide"</span><span class="nt">&gt;</span><span>Username</span><span class="nt">&lt;/label&gt;</span>
+						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"text"</span><span class="na"> placeholder=</span><span class="s">"Username"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;/div&gt;</span>
+					<span class="mleft-4">.......</span>
+					<span class="mleft-4">.......</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/form&gt;</span>
+			<span class="nt">&lt;/fieldset&gt;>
+		</code>
+	</pre>
+</div>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Checkboxes and Radios</h2>
+<p>
+	Menggunakan class <code>.horizontal-form</code> di dalam container <code>&lt;fieldset class="gp-form"&gt;</code>.
+</p>
+<h3>Default checkboxes and radios</h3>
+
+<div class="block-example">
+	<div class="checkbox">
+		<input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	</div>
+	<div class="checkbox disable">
+		<input type="checkbox" disabled> Disable lorem ipsum dolor sit amet, consectetur adipisicing elit
+	</div>
+	<div class="radio">
+		<input type="radio" name="radios" id="radio1" checked> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	</div>
+	<div class="radio">
+		<input type="radio" name="radios" id="radio2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	</div>
+	<div class="radio disable">
+		<input type="radio" disabled> Disable lorem ipsum dolor sit amet, consectetur adipisicing elit
+	</div>
 </div>
 <div class="html-example">
 	<pre>
@@ -207,6 +365,245 @@
 		</code>
 	</pre>
 </div>
+
+<h3>Inline checkboxes and radios</h3>
+<div class="block-example">
+	<form role="form">
+		<div class="checkbox-inline">
+			<input type="checkbox"> inline 1
+		</div>
+		<div class="checkbox-inline">
+			<input type="checkbox"> inline 2
+		</div>
+		<div class="checkbox-inline">
+			<input type="checkbox"> inline 3
+		</div>
+	</form>
+	<form role="form" class="mtop-1">
+		<div class="radio-inline">
+			<input type="radio" name="radios" id="radio1"> inline 1
+		</div>
+		<div class="radio-inline">
+			<input type="radio" name="radios" id="radio2"> inline 2
+		</div>
+		<div class="radio-inline">
+			<input type="radio" name="radios" id="radio3"> inline 3
+		</div>
+	</form>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+
+		</code>
+	</pre>
+</div>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Select Option</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+
+<div class="block-example">
+	<form class="gp-form" role="form">
+		<select class="form-length">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<br/>
+		<select multiple class="form-length">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<br/>
+		<select class="form-auto">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<br/>
+		<select class="form-auto inline-form">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<select class="form-auto inline-form">
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+		</select>
+		<select class="form-auto inline-form">
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+		</select>
+	</form>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+
+		</code>
+	</pre>
+</div>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Textarea</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+<div class="block-example">
+	<textarea rows="3" class="form-length"></textarea>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+
+		</code>
+	</pre>
+</div>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Form Sizing</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+<div class="block-example">
+	<div class="example-sizing-form">
+		<input type="text" class="form-length input-large" placeholder="Large Input">
+		<input type="text" class="form-length" placeholder="Default Input">
+		<input type="text" class="form-length input-small" placeholder="Default Input">
+		<select class="form-length input-large">
+			<option>Large Input</option>
+		</select>
+		<select class="form-length">
+			<option>Default Input</option>
+		</select>
+		<select class="form-length input-small">
+			<option>Small Input</option>
+		</select>
+	</div>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+
+		</code>
+	</pre>
+</div>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Form Disabled</h2>
+<p>
+	Hanya dengan menambahkan atribut <code>disabled</code>. Form disabled tidak mendukung untuk browser IE 8 kebawah.
+</p>
+<h3>Disabled inputs select & textarea</h3>
+<p>Tambahkan <code>disabled</code> atribut pada input / select / textarea untuk membuatnya disable dengan tampilan yang berbeda.</p>
+<div class="block-example">
+	<input type="text" class="form-length" placeholder="Here is disable input...." disabled>
+	<br/>
+	<select class="form-length" disabled>
+		<option>Here is disable select....</option>
+	</select>
+	<br/>
+	<textarea class="form-length" rows="3" disabled>Here is disable textarea....</textarea>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+
+		</code>
+	</pre>
+</div>
+
+<h3>Disabled fieldset</h3>
+<p>Tambahkan <code>disabled</code> atribut pada tag fieldset</p>
+<div class="block-example">
+	<fieldset class="gp-form" disabled>
+		<form role="form">
+			<div class="default-form">
+				<label>Disabled input</label>
+				<input type="text" class="form-length" placeholder="Disabled input">
+			</div>
+			<div class="default-form">
+				<label>Disabled select</label>
+				<select class="form-length">
+					<option>Disabled select</option>
+				</select>
+			</div>
+			<div class="default-form">
+				<div class="checkbox">
+					<input type="checkbox"> Disabled checkbox
+				</div>
+			</div>
+			<div class="default-form">
+				<input type="submit" class="gp-btn default-btn" value="Submit">
+			</div>
+		</form>
+	</fieldset>
+</div>
+<div class="html-example">
+	<pre>
+		<code class="html mtop-2">
+
+		</code>
+	</pre>
+</div>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Optional Icons</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+
+<div class="gp-r">
+    <div class="horizontal-line-1"></div>
+</div>
+
+<h2 class="weight-800 f-typoslab mbottom-1 horizontal-form-pos">Validation Forms</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
 
 <div class="gp-r">
     <div class="horizontal-line-1"></div>
