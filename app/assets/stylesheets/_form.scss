@@ -8,21 +8,31 @@ fieldset.gp-form {
 	padding: 0;
 	border: 0;
 }
-input[type="text"].input-large, input[type="email"].input-large, input[type="password"].input-large, select.input-large {
+input[type="text"].input-large,
+input[type="email"].input-large,
+input[type="password"].input-large,
+select.input-large {
 	height: 46px;
 	padding: 10px 16px;
 	font-size: 18px;
 	line-height: 1.33;
 	border-radius: 6px
 }
-input[type="text"].input-small, input[type="email"].input-small, input[type="password"].input-small, select.input-small {
+input[type="text"].input-small,
+input[type="email"].input-small,
+input[type="password"].input-small,
+select.input-small {
 	height: 30px;
 	padding: 5px 10px;
 	font-size: 12px;
 	line-height: 1.5;
 	border-radius: 3px;
 }
-input[type="text"], input[type="email"], input[type="password"], select, textarea {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
 	display: block;
 	height: 34px;
 	padding: 6px 12px;
@@ -40,16 +50,23 @@ input[type="text"], input[type="email"], input[type="password"], select, textare
 		@include transition(ease-in-out .2s);
 	}
 }
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
 	margin: 4px 0 0;
 }
 input[type="file"] {
 	display: block;
 }
-.gp-r .gp-form [class^=gp-c], .gp-r .gp-form [class^=gp-xsmall-c], .gp-r .gp-form [class^=gp-small-c], .gp-r .gp-form [class^=gp-ce-] {
+.gp-r .gp-form [class^=gp-c], 
+.gp-r .gp-form [class^=gp-xsmall-c], 
+.gp-r .gp-form [class^=gp-small-c], 
+.gp-r .gp-form [class^=gp-ce-] {
 	padding: 0 10px;
 }
-.gp-r .gp-form label[class^=gp-c], .gp-r .gp-form label[class^=gp-xsmall-c], .gp-r .gp-form label[class^=gp-small-c], .gp-r .gp-form label[class^=gp-ce-] {
+.gp-r .gp-form label[class^=gp-c], 
+.gp-r .gp-form label[class^=gp-xsmall-c], 
+.gp-r .gp-form label[class^=gp-small-c], 
+.gp-r .gp-form label[class^=gp-ce-] {
 	padding: 7px 15px 0 7px;
 }
 .gp-form {
@@ -70,13 +87,15 @@ input[type="file"] {
 			height: 120px;
 			resize: none;
 		}
-		input[type="checkbox"], input[type="radio"] {
+		input[type="checkbox"], 
+		input[type="radio"] {
 			padding: 0px;
 		}
 	}
 	.horizontal-form {
 		margin: 0 0 12px 0;
-		&:before, &:after{
+		&:before, 
+		&:after{
 			display: table;
 			content: "";
 		}
@@ -88,7 +107,8 @@ input[type="file"] {
 			margin: 0;
 			text-align: right;
 		}
-		.checkbox, .radio {
+		.checkbox, 
+		.radio {
 			float: left;
 			margin: 0;
 			padding: 5px 0 0;
@@ -96,7 +116,11 @@ input[type="file"] {
 		input[type="file"] {
 			padding: 0;
 		}
-		input[type="text"], input[type="email"], input[type="password"], select, textarea {
+		input[type="text"], 
+		input[type="email"], 
+		input[type="password"], 
+		select, 
+		textarea {
 			padding: 6px 12px;
 		}
 		textarea {
@@ -110,7 +134,8 @@ input[type="file"] {
 		label {
 			margin-bottom: 2px;
 		}
-		.checkbox, .radio {
+		.checkbox, 
+		.radio {
 			padding-left: 0px;
 		}
 	}
@@ -119,31 +144,36 @@ input[type="file"] {
 	}
 }
 
-.checkbox, .radio {
+.checkbox, 
+.radio {
 	position: relative;
 	display: block;
 	min-height: 20px;
 	margin: 10px 0;
 	padding-left: 20px;
-	input[type="checkbox"], input[type="radio"] {
+	input[type="checkbox"], 
+	input[type="radio"] {
 		position: absolute;
 		margin-left: -20px;
 	}
 }
-fieldset .checkbox-inline, fieldset .radio-inline {
+fieldset .checkbox-inline, 
+fieldset .radio-inline {
 	display: inline-block;
 	padding-left: 20px;
 	margin: 0 10px 0 0;
 	vertical-align: middle;
 	cursor: pointer;
 }
-.checkbox-inline, .radio-inline {
+.checkbox-inline, 
+.radio-inline {
 	display: inline-block;
 	padding-left: 20px;
 	margin: 0 10px 0 0;
 	vertical-align: middle;
 	cursor: pointer;
-	input[type="checkbox"], input[type="radio"] {
+	input[type="checkbox"], 
+	input[type="radio"] {
 		position: absolute;
 		margin-left: -20px;
 	}
@@ -163,23 +193,35 @@ fieldset .checkbox-inline, fieldset .radio-inline {
 textarea {
 	height: auto;
 }
-select[multiple], select[size] {
+select[multiple], 
+select[size] {
 	height: auto;
 }
-.checkbox.disable, .radio.disable {
+.checkbox.disable, 
+.radio.disable {
 	cursor: not-allowed;
 	color: rgba(0,0,0,0.6);
 }
-fieldset[disabled] input, fieldset[disabled] select, fieldset[disabled] textarea, fieldset[disabled] button, input[disabled], select[disabled], textarea[disabled], button[disabled] {
+fieldset[disabled] input, 
+fieldset[disabled] select, 
+fieldset[disabled] textarea, 
+fieldset[disabled] button, 
+input[disabled], 
+select[disabled], 
+textarea[disabled], 
+button[disabled] {
 	cursor: not-allowed !important;
 	background-color: #eee;
 	opacity: 1;
 }
-fieldset[disabled] .checkbox, fieldset[disabled] .radio {
+fieldset[disabled] .checkbox, 
+fieldset[disabled] .radio {
 	cursor: not-allowed;
 	color: #999;
 }
-.gp-btn.disabled, .gp-btn[disabled], fieldset[disabled] .gp-btn {
+.gp-btn.disabled, 
+.gp-btn[disabled], 
+fieldset[disabled] .gp-btn {
 	pointer-events: none;
 	cursor: not-allowed;
 	filter: alpha(opacity=65);
@@ -187,22 +229,93 @@ fieldset[disabled] .checkbox, fieldset[disabled] .radio {
 	box-shadow: none;
 	opacity: .8;
 }
-input[disabled], select[disabled], textarea[disabled] {
+input[disabled], 
+select[disabled], 
+textarea[disabled] {
 	color: #999;
 }
-input[type=radio][disabled], input[type=checkbox][disabled], input[type=radio].disabled, input[type=checkbox].disabled, fieldset[disabled] input[type=radio], fieldset[disabled] input[type=checkbox] {
+input[type=radio][disabled], 
+input[type=checkbox][disabled], 
+input[type=radio].disabled, 
+input[type=checkbox].disabled, 
+fieldset[disabled] input[type=radio], 
+fieldset[disabled] input[type=checkbox] {
 	cursor: not-allowed;
 }
-.radio+.radio, .checkbox+.checkbox {
+.radio+.radio, 
+.checkbox+.checkbox {
 	margin-top: -5px;
 }
-.example-sizing-form select, .example-sizing-form input[type=text]+input[type=text] {
+.example-sizing-form select, 
+.example-sizing-form input[type=text]+input[type=text] {
 	margin-top: 10px;
 }
 .input-info {
 	display: block;
 	margin: 5px 0 10px 0;
 	color: #888;
+}
+.success-form {
+	position: relative;
+	label {
+		color: #00b28b;
+	}
+	input, 
+	select, 
+	textarea {
+		border-color: #00b28b;
+		padding-right: 30px;
+		&:focus {
+			border-color: #22ad90;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 4px #22ad90;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #22ad90;
+		}
+	}
+	i {
+		color: #00b28b;
+	}
+	.form-icon {
+		position: absolute;
+		top: 25px;
+		right: 0;
+		z-index: 2;
+		display: block;
+		line-height: 34px;
+	}
+}
+.error-form {
+	position: relative;
+	label {
+		color: #c93330;
+	}
+	input, 
+	select, 
+	textarea {
+		border-color: #c93330;
+		&:focus {
+			border-color: #a02624;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 4px #a02624;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #a02624;
+		}
+	}
+	i {
+		color: #c93330;
+	}
+	.form-icon {
+		position: absolute;
+		top: 25px;
+		right: 0;
+		z-index: 2;
+		display: block;
+		line-height: 34px;
+	}
+}
+.form-icon {
+	width: 34px;
+	height: 34px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 /* End of FORM Style */
