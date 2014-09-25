@@ -208,8 +208,7 @@ fieldset[disabled] textarea,
 fieldset[disabled] button, 
 input[disabled], 
 select[disabled], 
-textarea[disabled], 
-button[disabled] {
+textarea[disabled] {
 	cursor: not-allowed !important;
 	background-color: #eee;
 	opacity: 1;
