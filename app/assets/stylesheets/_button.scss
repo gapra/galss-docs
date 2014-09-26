@@ -15,6 +15,15 @@
     @include transition(0.3s ease-in-out);
   }
 }
+.gp-btn.active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+a.gp-btn:hover {
+  color: inherit;
+}
 .default-btn {
   background: #f5f5f5;
   border-width: 1px;
@@ -23,6 +32,10 @@
     background: #ddd;
     border-color: #bbb;
   }
+}
+.default-btn.active {
+  background: #ddd;
+  border-color: #bbb;
 }
 .basic-btn {
   background: $gpgreen;
@@ -34,6 +47,14 @@
     border-color: $gpgreen;
   }
 }
+.basic-btn.active {
+  background: $gpdarkgreen;
+  border-color: $gpgreen;
+}
+a.basic-btn:hover,
+a.txt-white:hover {
+  color: #fff;
+}
 .alert-btn {
   background: $gpred;
   color: #fff;
@@ -44,11 +65,12 @@
     border-color: $gpred;
   }
 }
-.gp-btn-large {
+.btn-large {
   font-size: 20px;
 }
-.gp-btn-small {
+.btn-small {
   font-size: 12px;
+  line-height: 12px;
 }
 .gp-border-white {
   border: 1px solid #ffffff;

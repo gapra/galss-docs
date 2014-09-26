@@ -58,11 +58,18 @@
 				<span class="mleft-2 nt">&lt;form</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"default-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label&gt;</span><span>Username</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"text"</span><span class="na"</span> placeholder=</span><span class="s">"Username / Email Address"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"text"</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="na"</span> placeholder=</span><span class="s">"Username / Email Address"</span><span class="nt">&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"default-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label&gt;</span><span>Password</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"password"</span><span class="na"</span> placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"password"</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="na"</span> placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;/div&gt;</span>
+					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"default-form"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;label&gt;</span><span>Select option</span><span class="nt">&lt;/label&gt;</span>
+						<span class="mleft-6 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;option&gt;</span><span>1</span><span class="nt">&lt;/option&gt;</span>
+							<span class="mleft-8">.......</span>
+						<span class="mleft-6 nt">&lt;/select&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"default-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
@@ -117,18 +124,6 @@
 				</div>
 			</div>
 			<div class="horizontal-form">
-				<label class="gp-small-c1">Select option</label>
-				<div class="gp-small-c5">
-					<select class="form-length">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-				</div>
-			</div>
-			<div class="horizontal-form">
 				<label class="gp-small-c1">Choose Option</label>
 				<div class="gp-small-c5">
 					<div class="radio">
@@ -180,43 +175,57 @@
 				<span class="mleft-2 nt">&lt;form</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span class="nt">&gt;</span><span>Email Address</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"text"</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="na"> placeholder=</span><span class="s">"Email Address"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;input</span><span class="na"> type=</span><span class="s">"text"</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="na"> placeholder=</span><span class="s">"Email Address"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span class="nt">&gt;</span><span>Password</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"password"</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="na"> placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;input</span><span class="na"> type=</span><span class="s">"password"</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="na"> placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span>Choose Option</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-							<span class="mleft-8 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
-								<span class="mleft-10 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span>Radio Button</span>
-							<span class="mleft-8 nt">&lt;/div&gt;</span>
-							<span class="mleft-8 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
-								<span class="mleft-10 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span>Radio Button</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+								<span class="mleft-10 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+									<span class="mleft-12 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="nt">&gt;</span><span> Radio Button</span>
+								<span class="mleft-10 nt">&lt;/div&gt;</span>
+								<span class="mleft-10 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+									<span class="mleft-12 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="nt">&gt;</span><span> Radio Button</span>
+								<span class="mleft-10 nt">&lt;/div&gt;</span>
 							<span class="mleft-8 nt">&lt;/div&gt;</span>
 						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span>Checkbox</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-							<span class="mleft-8 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
-								<span class="mleft-10 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span>Checkbox</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+								<span class="mleft-10 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+									<span class="mleft-12 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span><span> Checkbox</span>
+								<span class="mleft-10 nt">&lt;/div&gt;</span>
 							<span class="mleft-8 nt">&lt;/div&gt;</span>
 						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span class="nt">&gt;</span><span>Input File</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"file"</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
-						<span class="mleft-6 nt">&lt;p</span><span class="na"> class=</span><span class="s">"input-info"</span><span class="nt">&gt;</span><span>Help info lorem ipsum dolor ipsum, consectetur adipisicing elit</span><span class="nt">&lt;/p&gt;</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;input</span><span class="na"> type=</span><span class="s">"file"</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;p</span><span class="na"> class=</span><span class="s">"input-info"</span><span class="nt">&gt;</span><span>Help info lorem ipsum dolor ipsum, consectetur adipisicing elit</span><span class="nt">&lt;/p&gt;</span>
+						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span class="nt">&gt;</span><span>Textarea</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;textarea</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span><span class="nt">&lt;/textarea&gt;</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;textarea</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="nt">&gt;</span><span class="nt">&lt;/textarea&gt;</span>
+						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;div</span><span class="na"> class=</span><span class="s">"horizontal-form"</span><span class="nt">&gt;</span>
 						<span class="mleft-6 nt">&lt;label</span><span class="na"> class=</span><span class="s">"gp-small-c1"</span><span class="nt">&gt;</span><span class="nt">&lt;/label&gt;</span>
-						<span class="mleft-6 nt">&lt;input</span><span class="na"> type=</span><span class="s">"submit"</span><span class="na"</span> class=</span><span class="s">"gp-btn default-btn"</span><span class="na"> value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;div</span><span class="na"> class=</span><span class="s">"gp-small-c5"</span><span class="nt">&gt;</span>
+							<span class="mleft-8 nt">&lt;input</span><span class="na"> type=</span><span class="s">"submit"</span><span class="na"</span> class=</span><span class="s">"gp-btn default-btn"</span><span class="na"> value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+						<span class="mleft-6 nt">&lt;/div&gt;</span>
 					<span class="mleft-4 nt">&lt;/div&gt;</span>
 				<span class="mleft-2 nt">&lt;/form&gt;</span>
 			<span class="nt">&lt;/fieldset&gt;</span>
@@ -361,7 +370,21 @@
 <div class="html-example">
 	<pre>
 		<code class="html mtop-2">
-
+			<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox disable"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="na"> disabled</span><span class="nt">&gt;</span><span> Disable lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="na"> name=</span><span class="s">"radios"</span><span class="na"> id=</span><span class="s">"radio1"</span><span class="na"> checked</span><span class="nt">&gt;</span><span> Lorem ipsum dolor sit amet, ...... </span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="na"> name=</span><span class="s">"radios"</span><span class="na"> id=</span><span class="s">"radio2"</span><span class="nt">&gt;</span><span> Lorem ipsum dolor sit amet, ...... </span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio disable"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="na"> disabled</span><span class="nt">&gt;</span><span> Disable lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+			<span class="nt">&lt;/div&gt;</span>
 		</code>
 	</pre>
 </div>
@@ -394,7 +417,28 @@
 <div class="html-example">
 	<pre>
 		<code class="html mtop-2">
-
+			<span class="nt">&lt;form</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span><span> inline 1</span>
+				<span class="mleft-2 nt">&lt;/div&gt;</span>
+				<span class="mleft-2 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span><span> inline 2</span>
+				<span class="mleft-2 nt">&lt;/div&gt;</span>
+				<span class="mleft-2 nt">&lt;div</span><span class="na"> class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;input</span><span class="na"> type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span><span> inline 3</span>
+				<span class="mleft-2 nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/form&gt;</span>
+			<span class="nt">&lt;form</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="na"> name=</span><span class="s">"radios"</span><span class="na"> id=</span><span class="s">"radio1</span><span class="nt">&gt;</span><span> inline 1</span>
+				<span class="mleft-2 nt">&lt;/div&gt;</span>
+				<span class="mleft-2 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="na"> name=</span><span class="s">"radios"</span><span class="na"> id=</span><span class="s">"radio1</span><span class="nt">&gt;</span><span> inline 2</span>
+				<span class="mleft-2 nt">&lt;/div&gt;</span>
+				<span class="mleft-2 nt">&lt;div</span><span class="na"> class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;input</span><span class="na"> type=</span><span class="s">"radio"</span><span class="na"> name=</span><span class="s">"radios"</span><span class="na"> id=</span><span class="s">"radio1</span><span class="nt">&gt;</span><span> inline 3</span>
+				<span class="mleft-2 nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/form&gt;</span>
 		</code>
 	</pre>
 </div>
@@ -462,7 +506,32 @@
 <div class="html-example">
 	<pre>
 		<code class="html mtop-2">
-
+			<span class="nt">&lt;form</span><span class="na"> class=</span><span class="s">"gp-form"</span><span class="na"> role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+				<span class="mleft-2 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;option&gt;</span><span>1</span><span class="nt">&lt;/option&gt;</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/select&gt;</span>
+				<span class="mleft-2 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="na"> multiple</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;option&gt;</span><span>1</span><span class="nt">&lt;/option&gt;</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/select&gt;</span>
+				<span class="mleft-2 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-auto"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;option&gt;</span><span>1</span><span class="nt">&lt;/option&gt;</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/select&gt;</span>
+				<span class="mleft-2 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-auto inline-form"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;option&gt;</span><span>1</span><span class="nt">&lt;/option&gt;</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/select&gt;</span>
+				<span class="mleft-2 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-auto inline-form"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;option&gt;</span><span>2</span><span class="nt">&lt;/option&gt;</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/select&gt;</span>
+				<span class="mleft-2 nt">&lt;select</span><span class="na"> class=</span><span class="s">"form-auto inline-form"</span><span class="nt">&gt;</span>
+					<span class="mleft-4 nt">&lt;option&gt;</span><span>3</span><span class="nt">&lt;/option&gt;</span>
+					<span class="mleft-4">.......</span>
+				<span class="mleft-2 nt">&lt;/select&gt;</span>
+			<span class="nt">&lt;/form&gt;</span>
 		</code>
 	</pre>
 </div>
@@ -483,7 +552,7 @@
 <div class="html-example">
 	<pre>
 		<code class="html mtop-2">
-
+			<span class="nt">&lt;textarea</span><span class="na"> rows=</span><span class="s">"3"</span><span class="na"> class=</span><span class="s">"form-length"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
 		</code>
 	</pre>
 </div>

@@ -9,7 +9,7 @@
   padding:0px !important;
 }
 
-@for $i from 0 through 10{
+@for $i from 0 through 20{
   .mtop-#{$i} {
     margin-top: 10px * $i !important;
   }
@@ -26,7 +26,7 @@
     margin: 10px * $i !important;
   }
 }
-@for $i from 0 through 10{
+@for $i from 0 through 20{
   .ptop-#{$i} {
     padding-top: 10px * $i !important;
   }
