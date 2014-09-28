@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+.thumbnail-img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	padding: 4px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.rounded-img {
+	@include border-radius(7px);
+}
+.circle-img {
+	@include border-radius(50%);
+}
+.small-img {
+	width: 140px;
+}
+.medium-img {
+	width: 240px;
+}
+.large-img {
+	width: 100%;
+}
