@@ -25,10 +25,12 @@
 @import "navigation";
 @import "grid";
 @import "code";
+@import "image";
 @import "table";
 @import "form";
 @import "button";
 @import "sites";
+@import "helper";
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
   display:block;
