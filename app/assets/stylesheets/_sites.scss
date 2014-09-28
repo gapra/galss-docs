@@ -389,9 +389,16 @@ nav.doc-menu{
   position: fixed;
   top: 0;
   width: 240px;
-  max-height: 600px;
+  height: 100%;
   overflow-y: scroll;
+  ul:last-child {
+    border-bottom: 0;
+  }
+  li {
+    border-bottom: 1px solid #fff;
+  }
 }
+
 nav.doc-menu li a {
 
 }
