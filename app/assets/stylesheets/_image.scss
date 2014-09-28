@@ -15,6 +15,9 @@
 .circle-img {
 	@include border-radius(50%);
 }
+.xsmall-img {
+	width: 70px;
+}
 .small-img {
 	width: 140px;
 }
