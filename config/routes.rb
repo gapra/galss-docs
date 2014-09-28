@@ -6,6 +6,7 @@ GalssGet::Application.routes.draw do
   match '/about'          => 'pages#about'
 
   match '/stylesheetdocumentation'  =>  'documentations#stylesheet'
+  match '/javascriptdocumentation'  =>  'documentations#javascript'
 
   root :to => 'home#index'
 
