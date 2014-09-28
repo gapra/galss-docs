@@ -61,7 +61,16 @@
 				<h3><em>Still inProgress ........</em></h3>
 				<!-- OVERVIEW -->
 				<h2 class="weight-800 f-typoslab overview-pos">OVERVIEW</h2>
-				
+				<p>
+                    Plugin dapat Anda tambahkan secara manual pada tag <code>&lt;head&gt;</code>. Gunakan file <code>galss.min.js</code> untuk menggunakan minified javascript plugin atau menggunakan file <code>galss.js</code> untuk dapat dengan mudah meng-kostum plugin.
+                </p>
+                <div class="html-example block-example">
+                    <pre>
+                        <code class="html">
+                            <span class="nt">&lt;script </span> <span class="na">src=</span><span class="s">"scripts/galss.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                        </code>
+                    </pre>
+                </div>
 
 				<div class="gp-r">
 					<div class="horizontal-line-1"></div>
@@ -69,6 +78,11 @@
 
                 <%= render "jsdropdown" %>
                 <%= render "jspopup" %>
+                <%= render "jslanding" %>
+                <%= render "jstab" %>
+                <%= render "jstooltip" %>
+                <%= render "jsaccordion" %>
+                <%= render "jsslider" %>
 
             </div>
 		</div>
