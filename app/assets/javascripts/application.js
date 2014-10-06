@@ -308,6 +308,33 @@ $(function(){
 		});
 	});
 
+	/* Navs sub menu */
+	var navsOpt = $('.navs-pos');
+	var navsPos = navsOpt.offset();
+	$('.nav-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : navsPos.top
+		});
+	});
+
+	/* Navbar submenu */
+	var navbarOpt = $('.navbar-pos');
+	var navbarPos = navbarOpt.offset();
+	$('.navbar-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : navbarPos.top
+		});
+	});
+
+	/* Pagination sub menu */
+	var pagiOpt = $('.pagi-pos');
+	var pagiPos = pagiOpt.offset();
+	$('.pagination-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : pagiPos.top + 1132
+		});
+	});
+
 	/* Tables sub menu */
 	var tableOpt = $('.tables-pos');
 	var tablePos = tableOpt.offset();
@@ -389,6 +416,15 @@ $(function(){
 	$('.image-opt').click(function(){
 		$('html, body').animate({
 			scrollTop : imagePos.top
+		});
+	});
+
+	/* Helper sub menu */
+	var helperOpt = $('.helper-pos');
+	var helperPos = helperOpt.offset();
+	$('.helper-opt').click(function(){
+		$('html, body').animate({
+			scrollTop : helperPos.top + 1132
 		});
 	});
 });

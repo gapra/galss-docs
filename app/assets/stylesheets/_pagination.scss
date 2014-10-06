@@ -1,0 +1,77 @@
+/*! ======= PAGINATION SYSTEM ======= */
+
+@import "variables";
+@import "mixins";
+
+.pagi {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0;
+	@include border-radius(4px);
+	li {
+		display: inline;
+		a {
+			position: relative;
+			float: left;
+			padding: 6px 12px;
+			margin-left: -1px;
+			color: $gpgreen;
+			text-decoration: none;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			&:hover {
+				background-color: #ddd;
+				color: #333;
+			}
+		}
+		&:first-child a {
+			margin-left: 0;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+		&:last-child a {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	}
+	.disabled a {
+		color: #888;
+		cursor: not-allowed;
+		background: #fff;
+		&:hover {
+			background: #fff;
+		}
+	}
+	.active a {
+		color: #fff;
+		cursor: default;
+		background: #999;
+		&:hover {
+			color: #fff;
+			background: #999;
+		}
+	}
+}
+.pagi-large {
+	li {
+		a {
+			padding: 10px 16px;
+			font-size: 18px;
+		}
+		&:first-child a {
+			margin-left: 0;
+			border-top-left-radius: 7px;
+			border-bottom-left-radius: 7px;
+		}
+		&:last-child a {
+			border-top-right-radius: 7px;
+			border-bottom-right-radius: 7px;
+		}
+	}
+}
+.pagi-small {
+	li a {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+}

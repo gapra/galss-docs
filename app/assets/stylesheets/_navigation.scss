@@ -48,6 +48,13 @@ nav{
   padding-left:0px;
   margin-bottom:0px;
   list-style: none;
+  &:before, &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
 }
 .navi > li{
   position: relative;
@@ -57,6 +64,10 @@ nav{
   position: relative;
   display: block;
   padding:10px 15px;
+}
+.navi > li > a:hover {
+  text-decoration: none;
+  background-color: #eee;
 }
 .navi-menu{
   /*margin:0px 15px;*/
@@ -186,6 +197,85 @@ nav{
   background-color:#e5e5e5;
 }
 
+.navi-tabs {
+  border-bottom: 1px solid #ddd;
+  li.active a {
+    background-color: #eee;
+    color: #555;
+    cursor: default;
+  }
+  @media (min-width: $screen-small) {
+    li {
+      float: left;
+      margin-bottom: -1px;
+      a{
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        &:hover {
+          border-color: #eee #eee #ddd;
+        }
+      }
+    }
+    li.active a {
+      color: #555;
+      cursor: default;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+    }
+  }
+}
+.navi-justify {
+  width: 100%;
+  li {
+    float: none;
+  }
+  @media (min-width: $screen-small) {
+    li {
+      display: table-cell;
+      width: 1%;
+    }
+  }
+}
+.navi-tabs.navi-justify {
+  li a {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  @media (min-width: $screen-small) {
+    li a {
+      margin-bottom: -1px;
+    }
+    .active a {
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.navi-buttons {
+  @media (min-width: $screen-small) {
+    li {
+      float: left;
+      a {
+        @include border-radius(4px);
+      }
+    }
+    li.active a {
+      color: #333;
+      background: #eee;
+      border: 1px solid #ddd;
+    }
+  }
+}
+.navi-buttons.navi-justify {
+  li {
+    float: none;
+    a {
+      text-align: center;
+    }
+  }
+}
 
 
 .gp-nav-menu{

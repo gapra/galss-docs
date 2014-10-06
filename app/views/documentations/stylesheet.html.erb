@@ -58,6 +58,22 @@
 	        							<li><a href="#txt-color" class="txt-color"><i class="fa fa-angle-right"></i> Text Colors</a></li>
 	        						</ul>
 	        					</li>
+                                <li>
+                                    <a href="javascript:void()" class="a-menu nav-opt"><i class="fa fa-caret-right"></i> Navs</a>
+                                    <ul class="unstyle-list pleft-2">
+                                        <li><a href="#nav-tabs" class="navtabs"><i class="fa fa-angle-right"></i> Nav Tabs</a></li>
+                                        <li><a href="#nav-btn" class="navbtn"><i class="fa fa-angle-right"></i> Nav Buttons</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" class="a-menu navbar-opt"><i class="fa fa-caret-right"></i> Navbar</a>
+                                    <ul class="unstyle-list pleft-2">
+                                        <li><a href="#navbar-defaults" class="navbardefault"><i class="fa fa-angle-right"></i> Navbar Default</a></li>
+                                        <li><a href="#navbar-btn" class="navbarbtn"><i class="fa fa-angle-right"></i> Navbar Buttons</a></li>
+                                        <li><a href="#navbar-form" class="navbarform"><i class="fa fa-angle-right"></i> Navbar Forms</a></li>
+                                        <li><a href="#navbar-fixed" class="navbarfixed"><i class="fa fa-angle-right"></i> Fixed Position</a></li>
+                                    </ul>
+                                </li>
 	        					<li>
                                     <a href="javascript:void()" class="a-menu table-opt"><i class="fa fa-caret-right"></i> Tables</a>
 	        						<ul class="unstyle-list pleft-2">
@@ -91,8 +107,10 @@
                                         <li><a href="#customize-button" class="customizebutton"><i class="fa fa-angle-right"></i> Customize Buttons</a></li>
                                         <li><a href="#button-size" class="buttonsize"><i class="fa fa-angle-right"></i> Button Sizes</a></li>
                                         <li><a href="#active-button" class="activebutton"><i class="fa fa-angle-right"></i> Active Button</a></li>
+                                        <li><a href="#group-button" class="groupbutton"><i class="fa fa-angle-right"></i> Group Button</a></li>
+                                        <li><a href="#group-button-justify" class="groupbuttonjustify"><i class="fa fa-angle-right"></i> Group Button Justified</a></li>
                                     </ul>
-                                </li> 
+                                </li>
 	        					<li>
                                     <a href="javascript:void()" class="a-menu image-opt"><i class="fa fa-caret-right"></i> Images</a>
                                     <ul class="unstyle-list pleft-2">
@@ -100,15 +118,39 @@
                                         <li><a href="#image-responsive" class="imageresponsive"><i class="fa fa-angle-right"></i> Image Sizes</a></li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a href="javascript:void()" class="a-menu pagination-opt"><i class="fa fa-caret-right"></i> Pagination</a>
+                                </li>
 	        					<li>
-                                    <a href="javascript:void()" class="a-menu"><i class="fa fa-caret-right"></i> Helper</a>
+                                    <a href="javascript:void()" class="a-menu helper-opt"><i class="fa fa-caret-right"></i> Helper</a>
                                     <ul class="unstyle-list pleft-2">
                                         <li><a href="#quick-float" class="quickfloat"><i class="fa fa-angle-right"></i> Quick Float</a></li>
                                         <li><a href="#hide-show" class="hideshow"><i class="fa fa-angle-right"></i> Show and Hide</a></li>
                                         <li><a href="#margin" class="margin"><i class="fa fa-angle-right"></i> Margin System</a></li>
                                         <li><a href="#padding" class="padding"><i class="fa fa-angle-right"></i> Padding System</a></li>
                                         <li><a href="#border" class="border"><i class="fa fa-angle-right"></i> Border</a></li>
+                                        <li><a href="#label" class="label-helper"><i class="fa fa-angle-right"></i> Labels</a></li>
+                                        <li><a href="#badges" class="badges-helper"><i class="fa fa-angle-right"></i> Badges</a></li>
+                                        <li><a href="#alerts" class="alerts-helper"><i class="fa fa-angle-right"></i> Alerts</a></li>
                                     </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" class="a-menu progress-opt"><i class="fa fa-caret-right"></i> Progress Bars</a>
+                                    <ul class="unstyle-list pleft-2">
+                                        <li><a href="#progbar-default" class="progbardefault"><i class="fa fa-angle-right"></i> Default</a></li>
+                                        <li><a href="#progbar-striped" class="progbarstriped"><i class="fa fa-angle-right"></i> Striped</a></li>
+                                        <li><a href="#progbar-animated" class="progbaranimated"><i class="fa fa-angle-right"></i> Animated</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" class="a-menu blog-opt"><i class="fa fa-caret-right"></i> Blogs Style</a>
+                                    <ul class="unstyle-list pleft-2">
+                                        <li><a href="#blog-default" class="blogdefault"><i class="fa fa-angle-right"></i> Default</a></li>
+                                        <li><a href="#blog-list" class="bloglist"><i class="fa fa-angle-right"></i> List</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" class="a-menu responsive-embed-opt"><i class="fa fa-caret-right"></i> Responsive Embed</a>
                                 </li>
 	        				</ul>
 	        			</nav>
@@ -192,14 +234,22 @@
                 <%= render "grid" %>
                 <%= render "typo" %>
                 <%= render "color" %>
+                <%= render "navs" %>
+                <%= render "navbar" %>
                 <%= render "table" %>
                 <%= render "form" %>
                 <%= render "button" %>
                 <%= render "image" %>
+                <%= render "pagination" %>
                 <%= render "helper" %>
                 <%= render "margin" %>
                 <%= render "padding" %>
                 <%= render "border" %>
+                <%= render "label" %>
+                <%= render "badge" %>
+                <%= render "alert" %>
+                <%= render "progressbar" %>
+                <%= render "responsiveembed" %>
 
             </div>
 		</div>

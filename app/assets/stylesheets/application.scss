@@ -26,6 +26,7 @@
 @import "grid";
 @import "code";
 @import "image";
+@import "pagination";
 @import "table";
 @import "form";
 @import "button";
@@ -417,19 +418,20 @@ img {
   clear:both;
 }
 
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
     height: 60px;
-    background-color: #009272;
-    border-radius: 7px;
+    background-color: #ccc;
+    border-radius: 3px;
 }
 ::-moz-appearance:scrollbar-thumb {
-    height: 60px;
-    background-color: #009272;
-    border-radius: 7px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 3px;
 }
 ::-webkit-scrollbar-track {
     background-color: #eee;
@@ -442,5 +444,5 @@ img {
 }
 ::-webkit-resizer {
     background-color: #666;
-}*/
+}
 

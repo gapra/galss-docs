@@ -5,93 +5,93 @@
  */
 
 .black{
-  background-color:$black;
+  background-color:$black !important;
 }
 .white{
-  background-color:#ffffff;
+  background-color:#ffffff !important;
 }
 .off-white{
-  background-color:#f5f5f5;
+  background-color:#f5f5f5 !important;
 }
 .blue{
-  background-color:$gpblue;
+  background-color:$gpblue !important;
 }
 .red{
-  background-color:$gpred;
+  background-color:$gpred !important;
 }
 .green{
-  background-color:$gpgreen;
+  background-color:$gpgreen !important;
 }
 .grey{
-  background-color:$gpgrey;
+  background-color:$gpgrey !important;
 }
 .yellow{
-  background-color:$gpyellow;
+  background-color:$gpyellow !important;
 }
 .orange{
-  background-color:$gporange;
+  background-color:$gporange !important;
 }
 .dark-blue{
-  background-color:$gpdarkblue;
+  background-color:$gpdarkblue !important;
 }
 .dark-red{
-  background-color:$gpdarkred;
+  background-color:$gpdarkred !important;
 }
 .dark-green{
-  background-color:$gpdarkgreen;
+  background-color:$gpdarkgreen !important;
 }
 .dark-grey{
-  background-color:$gpdarkgrey;
+  background-color:$gpdarkgrey !important;
 }
 
 /*! Text colors */
 .txt-black{
-  color:$black;
+  color:$black !important;
 }
 .txt-white{
-  color:#ffffff;
+  color:#ffffff !important;
 }
 .txt-off-white{
-  color:#f0f0f0;
+  color:#f0f0f0 !important;
 }
 .txt-blue{
-  color:$gpblue;
+  color:$gpblue !important;
 }
 .txt-red{
-  color:$gpred;
+  color:$gpred !important;
 }
 .txt-green{
-  color:$gpgreen;
+  color:$gpgreen !important;
 }
 .txt-grey{
-  color:$gpgrey;
+  color:$gpgrey !important;
 }
 .txt-yellow{
-  color:$gpyellow;
+  color:$gpyellow !important;
 }
 .txt-orange{
-  color:$gporange;
+  color:$gporange !important;
 }
 .txt-dark-blue{
-  color:$gpdarkblue;
+  color:$gpdarkblue !important;
 }
 .txt-dark-red{
-  color:$gpdarkred;
+  color:$gpdarkred !important;
 }
 .txt-dark-green{
-  color:$gpdarkgreen;
+  color:$gpdarkgreen !important;
 }
 .txt-dark-grey{
-  color:$gpdarkgrey;
+  color:$gpdarkgrey !important;
 }
 .txt-light-green{
-  color:$gplightgreen;
+  color:$gplightgreen !important;
 }
 
 /*! Opacity style */
 @for $i from 1 through 10{
   .opa-#{$i} {
-    opacity: 0.1 * $i;
+    opacity: 0.1 * $i !important;
   }
 }
 
