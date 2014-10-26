@@ -57,3 +57,19 @@
 		content: "";
 	}
 }
+
+/* Label */
+.label {
+  display: inline;
+  padding: 5px 10px;
+  font-size: 75%;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  @include border-radius(5px);
+}
+.label.default {
+  background: #666;
+}
