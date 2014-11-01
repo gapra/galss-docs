@@ -18,6 +18,7 @@
 $(window).load(function(){
 	jQuery(document).ready(function ($) {
 		$('.modal-block').append('<div class="close-modal" modal-attr="close"></div>');
+		$('.block-example .modal-block .close-modal').remove();
 		$('[modal-target-id]').click(function(){
 			var modalShow = $(this).attr('modal-target-id');
 			//alert(mtargetId);
@@ -31,6 +32,7 @@ $(window).load(function(){
 		});
 		$('.close-modal').click(function(){
 			$('body').removeClass('open-modal');
+			$('.block-example .galss-modal').animate({top: 0}, 300).fadeIn();
 			$('.galss-modal').animate({top: '-100%'}, 300).fadeOut();
 			$('.modal-overlay').fadeOut(function(){
 				$(this).remove();
